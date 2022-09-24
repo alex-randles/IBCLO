@@ -1,0 +1,3270 @@
+<h2 id="crossreference" class="list">Cross-reference for Intent Based Control Loop Ontology (IBCLO) classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Intent Based Control Loop Ontology (IBCLO).
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Action" title="https://ibclo.ericsson.com/#Action">Action</a>
+      </li>
+      <li>
+         <a href="#ActionEffect" title="https://ibclo.ericsson.com/#ActionEffect">ActionEffect</a>
+      </li>
+      <li>
+         <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+      </li>
+      <li>
+         <a href="#MetricQuery" title="https://ibclo.ericsson.com/#MetricQuery">MetricQuery</a>
+      </li>
+      <li>
+         <a href="#MetricResult" title="https://ibclo.ericsson.com/#MetricResult">MetricResult</a>
+      </li>
+      <li>
+         <a href="#MetricResultSet" title="https://ibclo.ericsson.com/#MetricResultSet">MetricResultSet</a>
+      </li>
+   </ul>
+   <div class="entity" id="Action">
+      <h3>Action<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#Action</p>
+      <div class="comment">
+         <span class="markdown">The operations which will be executed to effect the metric.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasActionName" title="https://ibclo.ericsson.com/#hasActionName">hasActionName</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDescription" title="https://ibclo.ericsson.com/#hasDescription">hasDescription</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasOperation" title="https://ibclo.ericsson.com/#hasOperation">hasOperation</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#ActionEffect" title="https://ibclo.ericsson.com/#ActionEffect">ActionEffect</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ActionEffect">
+      <h3>ActionEffect<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#ActionEffect</p>
+      <div class="comment">
+         <span class="markdown">The result of executing the actions operations. </span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#effectsMetric" title="https://ibclo.ericsson.com/#effectsMetric">effectsMetric</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasConfidence" title="https://ibclo.ericsson.com/#hasConfidence">hasConfidence</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#effectedBy" title="https://ibclo.ericsson.com/#effectedBy">effectedBy</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Action" title="https://ibclo.ericsson.com/#Action">Action</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Metric">
+      <h3>Metric<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#Metric</p>
+      <div class="comment">
+         <span class="markdown">The metric information being monitored.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#effectedBy" title="https://ibclo.ericsson.com/#effectedBy">effectedBy</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasAddress" title="https://ibclo.ericsson.com/#hasAddress">hasAddress</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasAlertmanager" title="https://ibclo.ericsson.com/#hasAlertmanager">hasAlertmanager</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasAlertname" title="https://ibclo.ericsson.com/#hasAlertname">hasAlertname</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasAlertstate" title="https://ibclo.ericsson.com/#hasAlertstate">hasAlertstate</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasBiosDate" title="https://ibclo.ericsson.com/#hasBiosDate">hasBiosDate</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasBiosVendor" title="https://ibclo.ericsson.com/#hasBiosVendor">hasBiosVendor</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasBiosVersion" title="https://ibclo.ericsson.com/#hasBiosVersion">hasBiosVersion</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasBoardName" title="https://ibclo.ericsson.com/#hasBoardName">hasBoardName</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasBoardVendor" title="https://ibclo.ericsson.com/#hasBoardVendor">hasBoardVendor</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasBoardVersion" title="https://ibclo.ericsson.com/#hasBoardVersion">hasBoardVersion</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasBranch" title="https://ibclo.ericsson.com/#hasBranch">hasBranch</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasBroadcast" title="https://ibclo.ericsson.com/#hasBroadcast">hasBroadcast</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCall" title="https://ibclo.ericsson.com/#hasCall">hasCall</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCapacityLevel" title="https://ibclo.ericsson.com/#hasCapacityLevel">hasCapacityLevel</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCause" title="https://ibclo.ericsson.com/#hasCause">hasCause</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasChassisVendor" title="https://ibclo.ericsson.com/#hasChassisVendor">hasChassisVendor</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasChip" title="https://ibclo.ericsson.com/#hasChip">hasChip</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasChipName" title="https://ibclo.ericsson.com/#hasChipName">hasChipName</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasClocksource" title="https://ibclo.ericsson.com/#hasClocksource">hasClocksource</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCode" title="https://ibclo.ericsson.com/#hasCode">hasCode</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCollector" title="https://ibclo.ericsson.com/#hasCollector">hasCollector</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasConfig" title="https://ibclo.ericsson.com/#hasConfig">hasConfig</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCore" title="https://ibclo.ericsson.com/#hasCore">hasCore</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCpu" title="https://ibclo.ericsson.com/#hasCpu">hasCpu</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDevice" title="https://ibclo.ericsson.com/#hasDevice">hasDevice</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDialerName" title="https://ibclo.ericsson.com/#hasDialerName">hasDialerName</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDomainname" title="https://ibclo.ericsson.com/#hasDomainname">hasDomainname</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDuplex" title="https://ibclo.ericsson.com/#hasDuplex">hasDuplex</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEndpoint" title="https://ibclo.ericsson.com/#hasEndpoint">hasEndpoint</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEvent" title="https://ibclo.ericsson.com/#hasEvent">hasEvent</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasFirmwareRevision" title="https://ibclo.ericsson.com/#hasFirmwareRevision">hasFirmwareRevision</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasFstype" title="https://ibclo.ericsson.com/#hasFstype">hasFstype</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasGoversion" title="https://ibclo.ericsson.com/#hasGoversion">hasGoversion</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasHandler" title="https://ibclo.ericsson.com/#hasHandler">hasHandler</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasId" title="https://ibclo.ericsson.com/#hasId">hasId</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIdLike" title="https://ibclo.ericsson.com/#hasIdLike">hasIdLike</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIndex" title="https://ibclo.ericsson.com/#hasIndex">hasIndex</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasInstance" title="https://ibclo.ericsson.com/#hasInstance">hasInstance</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasInterval" title="https://ibclo.ericsson.com/#hasInterval">hasInterval</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIp" title="https://ibclo.ericsson.com/#hasIp">hasIp</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasJob" title="https://ibclo.ericsson.com/#hasJob">hasJob</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasLabel" title="https://ibclo.ericsson.com/#hasLabel">hasLabel</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasLe" title="https://ibclo.ericsson.com/#hasLe">hasLe</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasListenerName" title="https://ibclo.ericsson.com/#hasListenerName">hasListenerName</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMachine" title="https://ibclo.ericsson.com/#hasMachine">hasMachine</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMajor" title="https://ibclo.ericsson.com/#hasMajor">hasMajor</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasManufacturer" title="https://ibclo.ericsson.com/#hasManufacturer">hasManufacturer</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMetricQuery" title="https://ibclo.ericsson.com/#hasMetricQuery">hasMetricQuery</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasMinor" title="https://ibclo.ericsson.com/#hasMinor">hasMinor</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMode" title="https://ibclo.ericsson.com/#hasMode">hasMode</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasModel" title="https://ibclo.ericsson.com/#hasModel">hasModel</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasModelName" title="https://ibclo.ericsson.com/#hasModelName">hasModelName</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMountpoint" title="https://ibclo.ericsson.com/#hasMountpoint">hasMountpoint</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasName" title="https://ibclo.ericsson.com/#hasName">hasName</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasNodename" title="https://ibclo.ericsson.com/#hasNodename">hasNodename</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasOperstate" title="https://ibclo.ericsson.com/#hasOperstate">hasOperstate</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasPackage" title="https://ibclo.ericsson.com/#hasPackage">hasPackage</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasPath" title="https://ibclo.ericsson.com/#hasPath">hasPath</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasPowerSupply" title="https://ibclo.ericsson.com/#hasPowerSupply">hasPowerSupply</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasPrettyName" title="https://ibclo.ericsson.com/#hasPrettyName">hasPrettyName</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasProductFamily" title="https://ibclo.ericsson.com/#hasProductFamily">hasProductFamily</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasProductName" title="https://ibclo.ericsson.com/#hasProductName">hasProductName</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasQuantile" title="https://ibclo.ericsson.com/#hasQuantile">hasQuantile</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasQueue" title="https://ibclo.ericsson.com/#hasQueue">hasQueue</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasReason" title="https://ibclo.ericsson.com/#hasReason">hasReason</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasRelease" title="https://ibclo.ericsson.com/#hasRelease">hasRelease</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasResultSet" title="https://ibclo.ericsson.com/#hasResultSet">hasResultSet</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasRevision" title="https://ibclo.ericsson.com/#hasRevision">hasRevision</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasRole" title="https://ibclo.ericsson.com/#hasRole">hasRole</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasRuleGroup" title="https://ibclo.ericsson.com/#hasRuleGroup">hasRuleGroup</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasScrapeJob" title="https://ibclo.ericsson.com/#hasScrapeJob">hasScrapeJob</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSensor" title="https://ibclo.ericsson.com/#hasSensor">hasSensor</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSerial" title="https://ibclo.ericsson.com/#hasSerial">hasSerial</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSerialNumber" title="https://ibclo.ericsson.com/#hasSerialNumber">hasSerialNumber</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSlice" title="https://ibclo.ericsson.com/#hasSlice">hasSlice</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasState" title="https://ibclo.ericsson.com/#hasState">hasState</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasStatus" title="https://ibclo.ericsson.com/#hasStatus">hasStatus</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSysname" title="https://ibclo.ericsson.com/#hasSysname">hasSysname</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSystemVendor" title="https://ibclo.ericsson.com/#hasSystemVendor">hasSystemVendor</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasTechnology" title="https://ibclo.ericsson.com/#hasTechnology">hasTechnology</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasTimeZone" title="https://ibclo.ericsson.com/#hasTimeZone">hasTimeZone</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasType" title="https://ibclo.ericsson.com/#hasType">hasType</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasVersion" title="https://ibclo.ericsson.com/#hasVersion">hasVersion</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasVersionCodename" title="https://ibclo.ericsson.com/#hasVersionCodename">hasVersionCodename</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasVersionId" title="https://ibclo.ericsson.com/#hasVersionId">hasVersionId</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasZone" title="https://ibclo.ericsson.com/#hasZone">hasZone</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#effectsMetric" title="https://ibclo.ericsson.com/#effectsMetric">effectsMetric</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#generatedByMetric" title="https://ibclo.ericsson.com/#generatedByMetric">generatedByMetric</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#usedByMetric" title="https://ibclo.ericsson.com/#usedByMetric">usedByMetric</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#MetricQuery" title="https://ibclo.ericsson.com/#MetricQuery">MetricQuery</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MetricResult" title="https://ibclo.ericsson.com/#MetricResult">MetricResult</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MetricResultSet" title="https://ibclo.ericsson.com/#MetricResultSet">MetricResultSet</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MetricQuery">
+      <h3>MetricQuery<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#MetricQuery</p>
+      <div class="comment">
+         <span class="markdown">The information related to the query used to collect the metric information.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasQuery" title="https://ibclo.ericsson.com/#hasQuery">hasQuery</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasResultStatus" title="https://ibclo.ericsson.com/#hasResultStatus">hasResultStatus</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasResultType" title="https://ibclo.ericsson.com/#hasResultType">hasResultType</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#usedByMetric" title="https://ibclo.ericsson.com/#usedByMetric">usedByMetric</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasMetricQuery" title="https://ibclo.ericsson.com/#hasMetricQuery">hasMetricQuery</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MetricResult" title="https://ibclo.ericsson.com/#MetricResult">MetricResult</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MetricResultSet" title="https://ibclo.ericsson.com/#MetricResultSet">MetricResultSet</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MetricResult">
+      <h3>MetricResult<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#MetricResult</p>
+      <div class="comment">
+         <span class="markdown">A result related to a specific result set.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasTimestamp" title="https://ibclo.ericsson.com/#hasTimestamp">hasTimestamp</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasValue" title="https://ibclo.ericsson.com/#hasValue">hasValue</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#inMetricSet" title="https://ibclo.ericsson.com/#inMetricSet">inMetricSet</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasResult" title="https://ibclo.ericsson.com/#hasResult">hasResult</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MetricQuery" title="https://ibclo.ericsson.com/#MetricQuery">MetricQuery</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MetricResultSet" title="https://ibclo.ericsson.com/#MetricResultSet">MetricResultSet</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MetricResultSet">
+      <h3>MetricResultSet<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#MetricResultSet</p>
+      <div class="comment">
+         <span class="markdown">The values and timestamps related to a metric.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#generatedByMetric" title="https://ibclo.ericsson.com/#generatedByMetric">generatedByMetric</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasResult" title="https://ibclo.ericsson.com/#hasResult">hasResult</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasResultSet" title="https://ibclo.ericsson.com/#hasResultSet">hasResultSet</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#inMetricSet" title="https://ibclo.ericsson.com/#inMetricSet">inMetricSet</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MetricQuery" title="https://ibclo.ericsson.com/#MetricQuery">MetricQuery</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MetricResult" title="https://ibclo.ericsson.com/#MetricResult">MetricResult</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#effectedBy" title="https://ibclo.ericsson.com/#effectedBy">effectedBy</a>
+      </li>
+      <li>
+         <a href="#effectsMetric" title="https://ibclo.ericsson.com/#effectsMetric">effectsMetric</a>
+      </li>
+      <li>
+         <a href="#generatedByMetric" title="https://ibclo.ericsson.com/#generatedByMetric">generatedByMetric</a>
+      </li>
+      <li>
+         <a href="#hasMetricQuery" title="https://ibclo.ericsson.com/#hasMetricQuery">hasMetricQuery</a>
+      </li>
+      <li>
+         <a href="#hasResult" title="https://ibclo.ericsson.com/#hasResult">hasResult</a>
+      </li>
+      <li>
+         <a href="#hasResultSet" title="https://ibclo.ericsson.com/#hasResultSet">hasResultSet</a>
+      </li>
+      <li>
+         <a href="#inMetricSet" title="https://ibclo.ericsson.com/#inMetricSet">inMetricSet</a>
+      </li>
+      <li>
+         <a href="#usedByMetric" title="https://ibclo.ericsson.com/#usedByMetric">usedByMetric</a>
+      </li>
+   </ul>
+   <div class="entity" id="effectedBy">
+      <h3>effectedBy<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#effectedBy</p>
+      <div class="comment">
+         <span class="markdown">The effect of the action's operation on the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ActionEffect" title="https://ibclo.ericsson.com/#ActionEffect">ActionEffect</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#effectsMetric" title="https://ibclo.ericsson.com/#effectsMetric">effectsMetric</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="effectsMetric">
+      <h3>effectsMetric<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#effectsMetric</p>
+      <div class="comment">
+         <span class="markdown">The metric effected by the action's operation.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ActionEffect" title="https://ibclo.ericsson.com/#ActionEffect">ActionEffect</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#effectedBy" title="https://ibclo.ericsson.com/#effectedBy">effectedBy</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="generatedByMetric">
+      <h3>generatedByMetric<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#generatedByMetric</p>
+      <div class="comment">
+         <span class="markdown">The result set generated by the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MetricResultSet" title="https://ibclo.ericsson.com/#MetricResultSet">MetricResultSet</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasResultSet" title="https://ibclo.ericsson.com/#hasResultSet">hasResultSet</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMetricQuery">
+      <h3>hasMetricQuery<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasMetricQuery</p>
+      <div class="comment">
+         <span class="markdown">The query which retrieved the metric information.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#MetricQuery" title="https://ibclo.ericsson.com/#MetricQuery">MetricQuery</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#usedByMetric" title="https://ibclo.ericsson.com/#usedByMetric">usedByMetric</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasResult">
+      <h3>hasResult<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasResult</p>
+      <div class="comment">
+         <span class="markdown">A result within a result set.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MetricResultSet" title="https://ibclo.ericsson.com/#MetricResultSet">MetricResultSet</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#MetricResult" title="https://ibclo.ericsson.com/#MetricResult">MetricResult</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#inMetricSet" title="https://ibclo.ericsson.com/#inMetricSet">inMetricSet</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasResultSet">
+      <h3>hasResultSet<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasResultSet</p>
+      <div class="comment">
+         <span class="markdown">The result set associated with the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#MetricResultSet" title="https://ibclo.ericsson.com/#MetricResultSet">MetricResultSet</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#generatedByMetric" title="https://ibclo.ericsson.com/#generatedByMetric">generatedByMetric</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="inMetricSet">
+      <h3>inMetricSet<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#inMetricSet</p>
+      <div class="comment">
+         <span class="markdown">A result within a result set.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MetricResult" title="https://ibclo.ericsson.com/#MetricResult">MetricResult</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#MetricResultSet" title="https://ibclo.ericsson.com/#MetricResultSet">MetricResultSet</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasResult" title="https://ibclo.ericsson.com/#hasResult">hasResult</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="usedByMetric">
+      <h3>usedByMetric<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#usedByMetric</p>
+      <div class="comment">
+         <span class="markdown">The metric used by the query.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MetricQuery" title="https://ibclo.ericsson.com/#MetricQuery">MetricQuery</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasMetricQuery" title="https://ibclo.ericsson.com/#hasMetricQuery">hasMetricQuery</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasActionName" title="https://ibclo.ericsson.com/#hasActionName">hasActionName</a>
+      </li>
+      <li>
+         <a href="#hasAddress" title="https://ibclo.ericsson.com/#hasAddress">hasAddress</a>
+      </li>
+      <li>
+         <a href="#hasAlertmanager" title="https://ibclo.ericsson.com/#hasAlertmanager">hasAlertmanager</a>
+      </li>
+      <li>
+         <a href="#hasAlertname" title="https://ibclo.ericsson.com/#hasAlertname">hasAlertname</a>
+      </li>
+      <li>
+         <a href="#hasAlertstate" title="https://ibclo.ericsson.com/#hasAlertstate">hasAlertstate</a>
+      </li>
+      <li>
+         <a href="#hasBiosDate" title="https://ibclo.ericsson.com/#hasBiosDate">hasBiosDate</a>
+      </li>
+      <li>
+         <a href="#hasBiosVendor" title="https://ibclo.ericsson.com/#hasBiosVendor">hasBiosVendor</a>
+      </li>
+      <li>
+         <a href="#hasBiosVersion" title="https://ibclo.ericsson.com/#hasBiosVersion">hasBiosVersion</a>
+      </li>
+      <li>
+         <a href="#hasBoardName" title="https://ibclo.ericsson.com/#hasBoardName">hasBoardName</a>
+      </li>
+      <li>
+         <a href="#hasBoardVendor" title="https://ibclo.ericsson.com/#hasBoardVendor">hasBoardVendor</a>
+      </li>
+      <li>
+         <a href="#hasBoardVersion" title="https://ibclo.ericsson.com/#hasBoardVersion">hasBoardVersion</a>
+      </li>
+      <li>
+         <a href="#hasBranch" title="https://ibclo.ericsson.com/#hasBranch">hasBranch</a>
+      </li>
+      <li>
+         <a href="#hasBroadcast" title="https://ibclo.ericsson.com/#hasBroadcast">hasBroadcast</a>
+      </li>
+      <li>
+         <a href="#hasCall" title="https://ibclo.ericsson.com/#hasCall">hasCall</a>
+      </li>
+      <li>
+         <a href="#hasCapacityLevel" title="https://ibclo.ericsson.com/#hasCapacityLevel">hasCapacityLevel</a>
+      </li>
+      <li>
+         <a href="#hasCause" title="https://ibclo.ericsson.com/#hasCause">hasCause</a>
+      </li>
+      <li>
+         <a href="#hasChassisVendor" title="https://ibclo.ericsson.com/#hasChassisVendor">hasChassisVendor</a>
+      </li>
+      <li>
+         <a href="#hasChip" title="https://ibclo.ericsson.com/#hasChip">hasChip</a>
+      </li>
+      <li>
+         <a href="#hasChipName" title="https://ibclo.ericsson.com/#hasChipName">hasChipName</a>
+      </li>
+      <li>
+         <a href="#hasClocksource" title="https://ibclo.ericsson.com/#hasClocksource">hasClocksource</a>
+      </li>
+      <li>
+         <a href="#hasCode" title="https://ibclo.ericsson.com/#hasCode">hasCode</a>
+      </li>
+      <li>
+         <a href="#hasCollector" title="https://ibclo.ericsson.com/#hasCollector">hasCollector</a>
+      </li>
+      <li>
+         <a href="#hasConfidence" title="https://ibclo.ericsson.com/#hasConfidence">hasConfidence</a>
+      </li>
+      <li>
+         <a href="#hasConfig" title="https://ibclo.ericsson.com/#hasConfig">hasConfig</a>
+      </li>
+      <li>
+         <a href="#hasCore" title="https://ibclo.ericsson.com/#hasCore">hasCore</a>
+      </li>
+      <li>
+         <a href="#hasCpu" title="https://ibclo.ericsson.com/#hasCpu">hasCpu</a>
+      </li>
+      <li>
+         <a href="#hasDescription" title="https://ibclo.ericsson.com/#hasDescription">hasDescription</a>
+      </li>
+      <li>
+         <a href="#hasDevice" title="https://ibclo.ericsson.com/#hasDevice">hasDevice</a>
+      </li>
+      <li>
+         <a href="#hasDialerName" title="https://ibclo.ericsson.com/#hasDialerName">hasDialerName</a>
+      </li>
+      <li>
+         <a href="#hasDomainname" title="https://ibclo.ericsson.com/#hasDomainname">hasDomainname</a>
+      </li>
+      <li>
+         <a href="#hasDuplex" title="https://ibclo.ericsson.com/#hasDuplex">hasDuplex</a>
+      </li>
+      <li>
+         <a href="#hasEndpoint" title="https://ibclo.ericsson.com/#hasEndpoint">hasEndpoint</a>
+      </li>
+      <li>
+         <a href="#hasEvent" title="https://ibclo.ericsson.com/#hasEvent">hasEvent</a>
+      </li>
+      <li>
+         <a href="#hasFirmwareRevision" title="https://ibclo.ericsson.com/#hasFirmwareRevision">hasFirmwareRevision</a>
+      </li>
+      <li>
+         <a href="#hasFstype" title="https://ibclo.ericsson.com/#hasFstype">hasFstype</a>
+      </li>
+      <li>
+         <a href="#hasGoversion" title="https://ibclo.ericsson.com/#hasGoversion">hasGoversion</a>
+      </li>
+      <li>
+         <a href="#hasHandler" title="https://ibclo.ericsson.com/#hasHandler">hasHandler</a>
+      </li>
+      <li>
+         <a href="#hasId" title="https://ibclo.ericsson.com/#hasId">hasId</a>
+      </li>
+      <li>
+         <a href="#hasIdLike" title="https://ibclo.ericsson.com/#hasIdLike">hasIdLike</a>
+      </li>
+      <li>
+         <a href="#hasIndex" title="https://ibclo.ericsson.com/#hasIndex">hasIndex</a>
+      </li>
+      <li>
+         <a href="#hasInstance" title="https://ibclo.ericsson.com/#hasInstance">hasInstance</a>
+      </li>
+      <li>
+         <a href="#hasInterval" title="https://ibclo.ericsson.com/#hasInterval">hasInterval</a>
+      </li>
+      <li>
+         <a href="#hasIp" title="https://ibclo.ericsson.com/#hasIp">hasIp</a>
+      </li>
+      <li>
+         <a href="#hasJob" title="https://ibclo.ericsson.com/#hasJob">hasJob</a>
+      </li>
+      <li>
+         <a href="#hasLabel" title="https://ibclo.ericsson.com/#hasLabel">hasLabel</a>
+      </li>
+      <li>
+         <a href="#hasLe" title="https://ibclo.ericsson.com/#hasLe">hasLe</a>
+      </li>
+      <li>
+         <a href="#hasListenerName" title="https://ibclo.ericsson.com/#hasListenerName">hasListenerName</a>
+      </li>
+      <li>
+         <a href="#hasMachine" title="https://ibclo.ericsson.com/#hasMachine">hasMachine</a>
+      </li>
+      <li>
+         <a href="#hasMajor" title="https://ibclo.ericsson.com/#hasMajor">hasMajor</a>
+      </li>
+      <li>
+         <a href="#hasManufacturer" title="https://ibclo.ericsson.com/#hasManufacturer">hasManufacturer</a>
+      </li>
+      <li>
+         <a href="#hasMinor" title="https://ibclo.ericsson.com/#hasMinor">hasMinor</a>
+      </li>
+      <li>
+         <a href="#hasMode" title="https://ibclo.ericsson.com/#hasMode">hasMode</a>
+      </li>
+      <li>
+         <a href="#hasModel" title="https://ibclo.ericsson.com/#hasModel">hasModel</a>
+      </li>
+      <li>
+         <a href="#hasModelName" title="https://ibclo.ericsson.com/#hasModelName">hasModelName</a>
+      </li>
+      <li>
+         <a href="#hasMountpoint" title="https://ibclo.ericsson.com/#hasMountpoint">hasMountpoint</a>
+      </li>
+      <li>
+         <a href="#hasName" title="https://ibclo.ericsson.com/#hasName">hasName</a>
+      </li>
+      <li>
+         <a href="#hasNodename" title="https://ibclo.ericsson.com/#hasNodename">hasNodename</a>
+      </li>
+      <li>
+         <a href="#hasOperation" title="https://ibclo.ericsson.com/#hasOperation">hasOperation</a>
+      </li>
+      <li>
+         <a href="#hasOperstate" title="https://ibclo.ericsson.com/#hasOperstate">hasOperstate</a>
+      </li>
+      <li>
+         <a href="#hasPackage" title="https://ibclo.ericsson.com/#hasPackage">hasPackage</a>
+      </li>
+      <li>
+         <a href="#hasPath" title="https://ibclo.ericsson.com/#hasPath">hasPath</a>
+      </li>
+      <li>
+         <a href="#hasPowerSupply" title="https://ibclo.ericsson.com/#hasPowerSupply">hasPowerSupply</a>
+      </li>
+      <li>
+         <a href="#hasPrettyName" title="https://ibclo.ericsson.com/#hasPrettyName">hasPrettyName</a>
+      </li>
+      <li>
+         <a href="#hasProductFamily" title="https://ibclo.ericsson.com/#hasProductFamily">hasProductFamily</a>
+      </li>
+      <li>
+         <a href="#hasProductName" title="https://ibclo.ericsson.com/#hasProductName">hasProductName</a>
+      </li>
+      <li>
+         <a href="#hasQuantile" title="https://ibclo.ericsson.com/#hasQuantile">hasQuantile</a>
+      </li>
+      <li>
+         <a href="#hasQuery" title="https://ibclo.ericsson.com/#hasQuery">hasQuery</a>
+      </li>
+      <li>
+         <a href="#hasQueue" title="https://ibclo.ericsson.com/#hasQueue">hasQueue</a>
+      </li>
+      <li>
+         <a href="#hasReason" title="https://ibclo.ericsson.com/#hasReason">hasReason</a>
+      </li>
+      <li>
+         <a href="#hasRelease" title="https://ibclo.ericsson.com/#hasRelease">hasRelease</a>
+      </li>
+      <li>
+         <a href="#hasResultStatus" title="https://ibclo.ericsson.com/#hasResultStatus">hasResultStatus</a>
+      </li>
+      <li>
+         <a href="#hasResultType" title="https://ibclo.ericsson.com/#hasResultType">hasResultType</a>
+      </li>
+      <li>
+         <a href="#hasRevision" title="https://ibclo.ericsson.com/#hasRevision">hasRevision</a>
+      </li>
+      <li>
+         <a href="#hasRole" title="https://ibclo.ericsson.com/#hasRole">hasRole</a>
+      </li>
+      <li>
+         <a href="#hasRuleGroup" title="https://ibclo.ericsson.com/#hasRuleGroup">hasRuleGroup</a>
+      </li>
+      <li>
+         <a href="#hasScrapeJob" title="https://ibclo.ericsson.com/#hasScrapeJob">hasScrapeJob</a>
+      </li>
+      <li>
+         <a href="#hasSensor" title="https://ibclo.ericsson.com/#hasSensor">hasSensor</a>
+      </li>
+      <li>
+         <a href="#hasSerial" title="https://ibclo.ericsson.com/#hasSerial">hasSerial</a>
+      </li>
+      <li>
+         <a href="#hasSerialNumber" title="https://ibclo.ericsson.com/#hasSerialNumber">hasSerialNumber</a>
+      </li>
+      <li>
+         <a href="#hasSlice" title="https://ibclo.ericsson.com/#hasSlice">hasSlice</a>
+      </li>
+      <li>
+         <a href="#hasState" title="https://ibclo.ericsson.com/#hasState">hasState</a>
+      </li>
+      <li>
+         <a href="#hasStatus" title="https://ibclo.ericsson.com/#hasStatus">hasStatus</a>
+      </li>
+      <li>
+         <a href="#hasSysname" title="https://ibclo.ericsson.com/#hasSysname">hasSysname</a>
+      </li>
+      <li>
+         <a href="#hasSystemVendor" title="https://ibclo.ericsson.com/#hasSystemVendor">hasSystemVendor</a>
+      </li>
+      <li>
+         <a href="#hasTechnology" title="https://ibclo.ericsson.com/#hasTechnology">hasTechnology</a>
+      </li>
+      <li>
+         <a href="#hasTimestamp" title="https://ibclo.ericsson.com/#hasTimestamp">hasTimestamp</a>
+      </li>
+      <li>
+         <a href="#hasTimeZone" title="https://ibclo.ericsson.com/#hasTimeZone">hasTimeZone</a>
+      </li>
+      <li>
+         <a href="#hasType" title="https://ibclo.ericsson.com/#hasType">hasType</a>
+      </li>
+      <li>
+         <a href="#hasValue" title="https://ibclo.ericsson.com/#hasValue">hasValue</a>
+      </li>
+      <li>
+         <a href="#hasVersion" title="https://ibclo.ericsson.com/#hasVersion">hasVersion</a>
+      </li>
+      <li>
+         <a href="#hasVersionCodename" title="https://ibclo.ericsson.com/#hasVersionCodename">hasVersionCodename</a>
+      </li>
+      <li>
+         <a href="#hasVersionId" title="https://ibclo.ericsson.com/#hasVersionId">hasVersionId</a>
+      </li>
+      <li>
+         <a href="#hasZone" title="https://ibclo.ericsson.com/#hasZone">hasZone</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasActionName">
+      <h3>hasActionName<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasActionName</p>
+      <div class="comment">
+         <span class="markdown">The name of the action.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Action" title="https://ibclo.ericsson.com/#Action">Action</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasAddress">
+      <h3>hasAddress<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasAddress</p>
+      <div class="comment">
+         <span class="markdown">The Address label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasAlertmanager">
+      <h3>hasAlertmanager<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasAlertmanager</p>
+      <div class="comment">
+         <span class="markdown">The Alertmanager label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasAlertname">
+      <h3>hasAlertname<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasAlertname</p>
+      <div class="comment">
+         <span class="markdown">The Alertname label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasAlertstate">
+      <h3>hasAlertstate<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasAlertstate</p>
+      <div class="comment">
+         <span class="markdown">The Alertstate label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasBiosDate">
+      <h3>hasBiosDate<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasBiosDate</p>
+      <div class="comment">
+         <span class="markdown">The Bios date label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasBiosVendor">
+      <h3>hasBiosVendor<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasBiosVendor</p>
+      <div class="comment">
+         <span class="markdown">The Bios vendor label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasBiosVersion">
+      <h3>hasBiosVersion<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasBiosVersion</p>
+      <div class="comment">
+         <span class="markdown">The Bios version label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasBoardName">
+      <h3>hasBoardName<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasBoardName</p>
+      <div class="comment">
+         <span class="markdown">The Board name label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasBoardVendor">
+      <h3>hasBoardVendor<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasBoardVendor</p>
+      <div class="comment">
+         <span class="markdown">The Board vendor label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasBoardVersion">
+      <h3>hasBoardVersion<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasBoardVersion</p>
+      <div class="comment">
+         <span class="markdown">The Board version label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasBranch">
+      <h3>hasBranch<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasBranch</p>
+      <div class="comment">
+         <span class="markdown">The Branch label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasBroadcast">
+      <h3>hasBroadcast<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasBroadcast</p>
+      <div class="comment">
+         <span class="markdown">The Broadcast label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasCall">
+      <h3>hasCall<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasCall</p>
+      <div class="comment">
+         <span class="markdown">The Call label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasCapacityLevel">
+      <h3>hasCapacityLevel<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasCapacityLevel</p>
+      <div class="comment">
+         <span class="markdown">The Capacity level label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasCause">
+      <h3>hasCause<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasCause</p>
+      <div class="comment">
+         <span class="markdown">The Cause label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasChassisVendor">
+      <h3>hasChassisVendor<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasChassisVendor</p>
+      <div class="comment">
+         <span class="markdown">The Chassis vendor label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasChip">
+      <h3>hasChip<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasChip</p>
+      <div class="comment">
+         <span class="markdown">The Chip label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasChipName">
+      <h3>hasChipName<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasChipName</p>
+      <div class="comment">
+         <span class="markdown">The Chip name label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasClocksource">
+      <h3>hasClocksource<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasClocksource</p>
+      <div class="comment">
+         <span class="markdown">The Clocksource label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasCode">
+      <h3>hasCode<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasCode</p>
+      <div class="comment">
+         <span class="markdown">The Code label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasCollector">
+      <h3>hasCollector<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasCollector</p>
+      <div class="comment">
+         <span class="markdown">The Collector label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasConfidence">
+      <h3>hasConfidence<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasConfidence</p>
+      <div class="comment">
+         <span class="markdown">The likelihood of the action having the desired effect.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ActionEffect" title="https://ibclo.ericsson.com/#ActionEffect">ActionEffect</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasConfig">
+      <h3>hasConfig<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasConfig</p>
+      <div class="comment">
+         <span class="markdown">The Config label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasCore">
+      <h3>hasCore<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasCore</p>
+      <div class="comment">
+         <span class="markdown">The Core label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasCpu">
+      <h3>hasCpu<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasCpu</p>
+      <div class="comment">
+         <span class="markdown">The Cpu label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDescription">
+      <h3>hasDescription<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasDescription</p>
+      <div class="comment">
+         <span class="markdown">A textual description of the action.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Action" title="https://ibclo.ericsson.com/#Action">Action</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDevice">
+      <h3>hasDevice<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasDevice</p>
+      <div class="comment">
+         <span class="markdown">The Device label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDialerName">
+      <h3>hasDialerName<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasDialerName</p>
+      <div class="comment">
+         <span class="markdown">The Dialer name label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDomainname">
+      <h3>hasDomainname<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasDomainname</p>
+      <div class="comment">
+         <span class="markdown">The Domainname label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDuplex">
+      <h3>hasDuplex<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasDuplex</p>
+      <div class="comment">
+         <span class="markdown">The Duplex label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasEndpoint">
+      <h3>hasEndpoint<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasEndpoint</p>
+      <div class="comment">
+         <span class="markdown">The Endpoint label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasEvent">
+      <h3>hasEvent<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasEvent</p>
+      <div class="comment">
+         <span class="markdown">The Event label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasFirmwareRevision">
+      <h3>hasFirmwareRevision<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasFirmwareRevision</p>
+      <div class="comment">
+         <span class="markdown">The Firmware revision label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasFstype">
+      <h3>hasFstype<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasFstype</p>
+      <div class="comment">
+         <span class="markdown">The Fstype label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasGoversion">
+      <h3>hasGoversion<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasGoversion</p>
+      <div class="comment">
+         <span class="markdown">The Goversion label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasHandler">
+      <h3>hasHandler<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasHandler</p>
+      <div class="comment">
+         <span class="markdown">The Handler label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasId">
+      <h3>hasId<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasId</p>
+      <div class="comment">
+         <span class="markdown">The Id label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasIdLike">
+      <h3>hasIdLike<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasIdLike</p>
+      <div class="comment">
+         <span class="markdown">The Id like label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasIndex">
+      <h3>hasIndex<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasIndex</p>
+      <div class="comment">
+         <span class="markdown">The Index label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasInstance">
+      <h3>hasInstance<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasInstance</p>
+      <div class="comment">
+         <span class="markdown">The Instance label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasInterval">
+      <h3>hasInterval<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasInterval</p>
+      <div class="comment">
+         <span class="markdown">The Interval label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasIp">
+      <h3>hasIp<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasIp</p>
+      <div class="comment">
+         <span class="markdown">The Ip label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasJob">
+      <h3>hasJob<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasJob</p>
+      <div class="comment">
+         <span class="markdown">The Job label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasLabel">
+      <h3>hasLabel<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasLabel</p>
+      <div class="comment">
+         <span class="markdown">The Label label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasLe">
+      <h3>hasLe<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasLe</p>
+      <div class="comment">
+         <span class="markdown">The Le label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasListenerName">
+      <h3>hasListenerName<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasListenerName</p>
+      <div class="comment">
+         <span class="markdown">The Listener name label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMachine">
+      <h3>hasMachine<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasMachine</p>
+      <div class="comment">
+         <span class="markdown">The Machine label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMajor">
+      <h3>hasMajor<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasMajor</p>
+      <div class="comment">
+         <span class="markdown">The Major label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasManufacturer">
+      <h3>hasManufacturer<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasManufacturer</p>
+      <div class="comment">
+         <span class="markdown">The Manufacturer label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMinor">
+      <h3>hasMinor<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasMinor</p>
+      <div class="comment">
+         <span class="markdown">The Minor label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMode">
+      <h3>hasMode<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasMode</p>
+      <div class="comment">
+         <span class="markdown">The Mode label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasModel">
+      <h3>hasModel<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasModel</p>
+      <div class="comment">
+         <span class="markdown">The Model label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasModelName">
+      <h3>hasModelName<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasModelName</p>
+      <div class="comment">
+         <span class="markdown">The Model name label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMountpoint">
+      <h3>hasMountpoint<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasMountpoint</p>
+      <div class="comment">
+         <span class="markdown">The Mountpoint label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasName">
+      <h3>hasName<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasName</p>
+      <div class="comment">
+         <span class="markdown">The   name   label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasNodename">
+      <h3>hasNodename<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasNodename</p>
+      <div class="comment">
+         <span class="markdown">The Nodename label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasOperation">
+      <h3>hasOperation<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasOperation</p>
+      <div class="comment">
+         <span class="markdown">The operation which will be executed by the action.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Action" title="https://ibclo.ericsson.com/#Action">Action</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasOperstate">
+      <h3>hasOperstate<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasOperstate</p>
+      <div class="comment">
+         <span class="markdown">The Operstate label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPackage">
+      <h3>hasPackage<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasPackage</p>
+      <div class="comment">
+         <span class="markdown">The Package label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPath">
+      <h3>hasPath<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasPath</p>
+      <div class="comment">
+         <span class="markdown">The Path label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPowerSupply">
+      <h3>hasPowerSupply<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasPowerSupply</p>
+      <div class="comment">
+         <span class="markdown">The Power supply label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPrettyName">
+      <h3>hasPrettyName<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasPrettyName</p>
+      <div class="comment">
+         <span class="markdown">The Pretty name label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasProductFamily">
+      <h3>hasProductFamily<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasProductFamily</p>
+      <div class="comment">
+         <span class="markdown">The Product family label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasProductName">
+      <h3>hasProductName<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasProductName</p>
+      <div class="comment">
+         <span class="markdown">The Product name label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasQuantile">
+      <h3>hasQuantile<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasQuantile</p>
+      <div class="comment">
+         <span class="markdown">The Quantile label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasQuery">
+      <h3>hasQuery<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasQuery</p>
+      <div class="comment">
+         <span class="markdown">The query used to collect the metric information.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MetricQuery" title="https://ibclo.ericsson.com/#MetricQuery">MetricQuery</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasQueue">
+      <h3>hasQueue<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasQueue</p>
+      <div class="comment">
+         <span class="markdown">The Queue label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasReason">
+      <h3>hasReason<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasReason</p>
+      <div class="comment">
+         <span class="markdown">The Reason label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasRelease">
+      <h3>hasRelease<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasRelease</p>
+      <div class="comment">
+         <span class="markdown">The Release label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasResultStatus">
+      <h3>hasResultStatus<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasResultStatus</p>
+      <div class="comment">
+         <span class="markdown">The status of the API response.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MetricQuery" title="https://ibclo.ericsson.com/#MetricQuery">MetricQuery</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasResultType">
+      <h3>hasResultType<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasResultType</p>
+      <div class="comment">
+         <span class="markdown">The result type returned by the API.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MetricQuery" title="https://ibclo.ericsson.com/#MetricQuery">MetricQuery</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasRevision">
+      <h3>hasRevision<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasRevision</p>
+      <div class="comment">
+         <span class="markdown">The Revision label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasRole">
+      <h3>hasRole<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasRole</p>
+      <div class="comment">
+         <span class="markdown">The Role label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasRuleGroup">
+      <h3>hasRuleGroup<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasRuleGroup</p>
+      <div class="comment">
+         <span class="markdown">The Rule group label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasScrapeJob">
+      <h3>hasScrapeJob<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasScrapeJob</p>
+      <div class="comment">
+         <span class="markdown">The Scrape job label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSensor">
+      <h3>hasSensor<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasSensor</p>
+      <div class="comment">
+         <span class="markdown">The Sensor label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSerial">
+      <h3>hasSerial<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasSerial</p>
+      <div class="comment">
+         <span class="markdown">The Serial label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSerialNumber">
+      <h3>hasSerialNumber<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasSerialNumber</p>
+      <div class="comment">
+         <span class="markdown">The Serial number label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSlice">
+      <h3>hasSlice<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasSlice</p>
+      <div class="comment">
+         <span class="markdown">The Slice label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasState">
+      <h3>hasState<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasState</p>
+      <div class="comment">
+         <span class="markdown">The State label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasStatus">
+      <h3>hasStatus<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasStatus</p>
+      <div class="comment">
+         <span class="markdown">The Status label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSysname">
+      <h3>hasSysname<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasSysname</p>
+      <div class="comment">
+         <span class="markdown">The Sysname label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSystemVendor">
+      <h3>hasSystemVendor<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasSystemVendor</p>
+      <div class="comment">
+         <span class="markdown">The System vendor label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasTechnology">
+      <h3>hasTechnology<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasTechnology</p>
+      <div class="comment">
+         <span class="markdown">The Technology label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasTimestamp">
+      <h3>hasTimestamp<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasTimestamp</p>
+      <div class="comment">
+         <span class="markdown">The timestamp related to a result.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MetricResult" title="https://ibclo.ericsson.com/#MetricResult">MetricResult</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasTimeZone">
+      <h3>hasTimeZone<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasTimeZone</p>
+      <div class="comment">
+         <span class="markdown">The Time zone label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasType">
+      <h3>hasType<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasType</p>
+      <div class="comment">
+         <span class="markdown">The Type label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasValue">
+      <h3>hasValue<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasValue</p>
+      <div class="comment">
+         <span class="markdown">The value associated with a result.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MetricResult" title="https://ibclo.ericsson.com/#MetricResult">MetricResult</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasVersion">
+      <h3>hasVersion<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasVersion</p>
+      <div class="comment">
+         <span class="markdown">The Version label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasVersionCodename">
+      <h3>hasVersionCodename<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasVersionCodename</p>
+      <div class="comment">
+         <span class="markdown">The Version codename label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasVersionId">
+      <h3>hasVersionId<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasVersionId</p>
+      <div class="comment">
+         <span class="markdown">The Version id label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasZone">
+      <h3>hasZone<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ibclo.ericsson.com/#hasZone</p>
+      <div class="comment">
+         <span class="markdown">The Zone label for the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric" title="https://ibclo.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

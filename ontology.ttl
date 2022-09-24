@@ -1,0 +1,926 @@
+@prefix : <https://prometheus-metric-ontology.ericsson.com/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://prometheus-metric-ontology.ericsson.com/#> .
+
+<https://prometheus-metric-ontology.ericsson.com/#> rdf:type owl:Ontology ;
+                                                     <http://purl.org/dc/terms/abstract> "The Intent Based Control Loop Ontology (IBCLO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to Prometheus metric information." ;
+                                                     <http://purl.org/dc/terms/created> "4 July 2022" ;
+                                                     <http://purl.org/dc/terms/creator> "Alex Randles" ,
+                                                                                        "John Keeney" ,
+                                                                                        "Liam Fallon" ;
+                                                     <http://purl.org/dc/terms/description> "The Intent Based Control Loop Ontology (IBCLO) is used to capture information which relates to metric information within the Prometheus monitoring system." ;
+                                                     <http://purl.org/dc/terms/license> "http://creativecommons.org/publicdomain/zero/1.0/" ;
+                                                     <http://purl.org/dc/terms/title> "Intent Based Control Loop Ontology (IBCLO)" ;
+                                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "Intent Based Control Loop Ontology (IBCLO)" ;
+                                                     <http://purl.org/vocab/vann/preferredNamespaceUri> "https://ibclo.ericsson.com/#" ;
+                                                     owl:versionInfo "4 July 2022" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://ibclo.ericsson.com/#effectedBy
+<https://ibclo.ericsson.com/#effectedBy> rdf:type owl:ObjectProperty ;
+                                         owl:inverseOf <https://ibclo.ericsson.com/#effectsMetric> ;
+                                         rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                         rdfs:range <https://ibclo.ericsson.com/#ActionEffect> ;
+                                         rdfs:comment "The effect of the action's operation on the metric." ;
+                                         rdfs:label "effectedBy" .
+
+
+###  https://ibclo.ericsson.com/#effectsMetric
+<https://ibclo.ericsson.com/#effectsMetric> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <https://ibclo.ericsson.com/#ActionEffect> ;
+                                            rdfs:range <https://ibclo.ericsson.com/#Metric> ;
+                                            rdfs:comment "The metric effected by the action's operation." ;
+                                            rdfs:label "effectsMetric" .
+
+
+###  https://ibclo.ericsson.com/#generatedByMetric
+<https://ibclo.ericsson.com/#generatedByMetric> rdf:type owl:ObjectProperty ;
+                                                owl:inverseOf <https://ibclo.ericsson.com/#hasResultSet> ;
+                                                rdfs:domain <https://ibclo.ericsson.com/#MetricResultSet> ;
+                                                rdfs:range <https://ibclo.ericsson.com/#Metric> ;
+                                                rdfs:comment "The result set generated by the metric." ;
+                                                rdfs:label "generatedByMetric" .
+
+
+###  https://ibclo.ericsson.com/#hasMetricQuery
+<https://ibclo.ericsson.com/#hasMetricQuery> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                             rdfs:range <https://ibclo.ericsson.com/#MetricQuery> ;
+                                             rdfs:comment "The query which retrieved the metric information." ;
+                                             rdfs:label "hasMetricQuery" .
+
+
+###  https://ibclo.ericsson.com/#hasResult
+<https://ibclo.ericsson.com/#hasResult> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <https://ibclo.ericsson.com/#MetricResultSet> ;
+                                        rdfs:range <https://ibclo.ericsson.com/#MetricResult> ;
+                                        rdfs:comment "A result within a result set." ;
+                                        rdfs:label "hasResult" .
+
+
+###  https://ibclo.ericsson.com/#hasResultSet
+<https://ibclo.ericsson.com/#hasResultSet> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                           rdfs:range <https://ibclo.ericsson.com/#MetricResultSet> ;
+                                           rdfs:comment "The result set associated with the metric." ;
+                                           rdfs:label "hasResultSet" .
+
+
+###  https://ibclo.ericsson.com/#inMetricSet
+<https://ibclo.ericsson.com/#inMetricSet> rdf:type owl:ObjectProperty ;
+                                          owl:inverseOf <https://ibclo.ericsson.com/#hasResult> ;
+                                          rdfs:domain <https://ibclo.ericsson.com/#MetricResult> ;
+                                          rdfs:range <https://ibclo.ericsson.com/#MetricResultSet> ;
+                                          rdfs:comment "A result within a result set." ;
+                                          rdfs:label "inMetricSet" .
+
+
+###  https://ibclo.ericsson.com/#usedByMetric
+<https://ibclo.ericsson.com/#usedByMetric> rdf:type owl:ObjectProperty ;
+                                           owl:inverseOf <https://ibclo.ericsson.com/#hasMetricQuery> ;
+                                           rdfs:domain <https://ibclo.ericsson.com/#MetricQuery> ;
+                                           rdfs:range <https://ibclo.ericsson.com/#Metric> ;
+                                           rdfs:comment "The metric used by the query." ;
+                                           rdfs:label "usedByMetric" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://ibclo.ericsson.com/#hasActionName
+<https://ibclo.ericsson.com/#hasActionName> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <https://ibclo.ericsson.com/#Action> ;
+                                            rdfs:range xsd:string ;
+                                            rdfs:comment "The name of the action." ;
+                                            rdfs:label "hasActionName" .
+
+
+###  https://ibclo.ericsson.com/#hasAddress
+<https://ibclo.ericsson.com/#hasAddress> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                         rdfs:range xsd:string ;
+                                         rdfs:comment "The Address label for the metric." ;
+                                         rdfs:label "hasAddress" .
+
+
+###  https://ibclo.ericsson.com/#hasAlertmanager
+<https://ibclo.ericsson.com/#hasAlertmanager> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                              rdfs:range xsd:string ;
+                                              rdfs:comment "The Alertmanager label for the metric." ;
+                                              rdfs:label "hasAlertmanager" .
+
+
+###  https://ibclo.ericsson.com/#hasAlertname
+<https://ibclo.ericsson.com/#hasAlertname> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:comment "The Alertname label for the metric." ;
+                                           rdfs:label "hasAlertname" .
+
+
+###  https://ibclo.ericsson.com/#hasAlertstate
+<https://ibclo.ericsson.com/#hasAlertstate> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                            rdfs:range xsd:string ;
+                                            rdfs:comment "The Alertstate label for the metric." ;
+                                            rdfs:label "hasAlertstate" .
+
+
+###  https://ibclo.ericsson.com/#hasBiosDate
+<https://ibclo.ericsson.com/#hasBiosDate> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:comment "The Bios date label for the metric." ;
+                                          rdfs:label "hasBiosDate" .
+
+
+###  https://ibclo.ericsson.com/#hasBiosVendor
+<https://ibclo.ericsson.com/#hasBiosVendor> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                            rdfs:range xsd:string ;
+                                            rdfs:comment "The Bios vendor label for the metric." ;
+                                            rdfs:label "hasBiosVendor" .
+
+
+###  https://ibclo.ericsson.com/#hasBiosVersion
+<https://ibclo.ericsson.com/#hasBiosVersion> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                             rdfs:range xsd:string ;
+                                             rdfs:comment "The Bios version label for the metric." ;
+                                             rdfs:label "hasBiosVersion" .
+
+
+###  https://ibclo.ericsson.com/#hasBoardName
+<https://ibclo.ericsson.com/#hasBoardName> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:comment "The Board name label for the metric." ;
+                                           rdfs:label "hasBoardName" .
+
+
+###  https://ibclo.ericsson.com/#hasBoardVendor
+<https://ibclo.ericsson.com/#hasBoardVendor> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                             rdfs:range xsd:string ;
+                                             rdfs:comment "The Board vendor label for the metric." ;
+                                             rdfs:label "hasBoardVendor" .
+
+
+###  https://ibclo.ericsson.com/#hasBoardVersion
+<https://ibclo.ericsson.com/#hasBoardVersion> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                              rdfs:range xsd:string ;
+                                              rdfs:comment "The Board version label for the metric." ;
+                                              rdfs:label "hasBoardVersion" .
+
+
+###  https://ibclo.ericsson.com/#hasBranch
+<https://ibclo.ericsson.com/#hasBranch> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:comment "The Branch label for the metric." ;
+                                        rdfs:label "hasBranch" .
+
+
+###  https://ibclo.ericsson.com/#hasBroadcast
+<https://ibclo.ericsson.com/#hasBroadcast> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:comment "The Broadcast label for the metric." ;
+                                           rdfs:label "hasBroadcast" .
+
+
+###  https://ibclo.ericsson.com/#hasCall
+<https://ibclo.ericsson.com/#hasCall> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "The Call label for the metric." ;
+                                      rdfs:label "hasCall" .
+
+
+###  https://ibclo.ericsson.com/#hasCapacityLevel
+<https://ibclo.ericsson.com/#hasCapacityLevel> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                               rdfs:range xsd:string ;
+                                               rdfs:comment "The Capacity level label for the metric." ;
+                                               rdfs:label "hasCapacityLevel" .
+
+
+###  https://ibclo.ericsson.com/#hasCause
+<https://ibclo.ericsson.com/#hasCause> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "The Cause label for the metric." ;
+                                       rdfs:label "hasCause" .
+
+
+###  https://ibclo.ericsson.com/#hasChassisVendor
+<https://ibclo.ericsson.com/#hasChassisVendor> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                               rdfs:range xsd:string ;
+                                               rdfs:comment "The Chassis vendor label for the metric." ;
+                                               rdfs:label "hasChassisVendor" .
+
+
+###  https://ibclo.ericsson.com/#hasChip
+<https://ibclo.ericsson.com/#hasChip> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "The Chip label for the metric." ;
+                                      rdfs:label "hasChip" .
+
+
+###  https://ibclo.ericsson.com/#hasChipName
+<https://ibclo.ericsson.com/#hasChipName> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:comment "The Chip name label for the metric." ;
+                                          rdfs:label "hasChipName" .
+
+
+###  https://ibclo.ericsson.com/#hasClocksource
+<https://ibclo.ericsson.com/#hasClocksource> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                             rdfs:range xsd:string ;
+                                             rdfs:comment "The Clocksource label for the metric." ;
+                                             rdfs:label "hasClocksource" .
+
+
+###  https://ibclo.ericsson.com/#hasCode
+<https://ibclo.ericsson.com/#hasCode> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "The Code label for the metric." ;
+                                      rdfs:label "hasCode" .
+
+
+###  https://ibclo.ericsson.com/#hasCollector
+<https://ibclo.ericsson.com/#hasCollector> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:comment "The Collector label for the metric." ;
+                                           rdfs:label "hasCollector" .
+
+
+###  https://ibclo.ericsson.com/#hasConfidence
+<https://ibclo.ericsson.com/#hasConfidence> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <https://ibclo.ericsson.com/#ActionEffect> ;
+                                            rdfs:range xsd:string ;
+                                            rdfs:comment "The likelihood of the action having the desired effect." ;
+                                            rdfs:label "hasConfidence" .
+
+
+###  https://ibclo.ericsson.com/#hasConfig
+<https://ibclo.ericsson.com/#hasConfig> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:comment "The Config label for the metric." ;
+                                        rdfs:label "hasConfig" .
+
+
+###  https://ibclo.ericsson.com/#hasCore
+<https://ibclo.ericsson.com/#hasCore> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "The Core label for the metric." ;
+                                      rdfs:label "hasCore" .
+
+
+###  https://ibclo.ericsson.com/#hasCpu
+<https://ibclo.ericsson.com/#hasCpu> rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                     rdfs:range xsd:string ;
+                                     rdfs:comment "The Cpu label for the metric." ;
+                                     rdfs:label "hasCpu" .
+
+
+###  https://ibclo.ericsson.com/#hasDescription
+<https://ibclo.ericsson.com/#hasDescription> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain <https://ibclo.ericsson.com/#Action> ;
+                                             rdfs:range xsd:string ;
+                                             rdfs:comment "A textual description of the action." ;
+                                             rdfs:label "hasDescription" .
+
+
+###  https://ibclo.ericsson.com/#hasDevice
+<https://ibclo.ericsson.com/#hasDevice> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:comment "The Device label for the metric." ;
+                                        rdfs:label "hasDevice" .
+
+
+###  https://ibclo.ericsson.com/#hasDialerName
+<https://ibclo.ericsson.com/#hasDialerName> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                            rdfs:range xsd:string ;
+                                            rdfs:comment "The Dialer name label for the metric." ;
+                                            rdfs:label "hasDialerName" .
+
+
+###  https://ibclo.ericsson.com/#hasDomainname
+<https://ibclo.ericsson.com/#hasDomainname> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                            rdfs:range xsd:string ;
+                                            rdfs:comment "The Domainname label for the metric." ;
+                                            rdfs:label "hasDomainname" .
+
+
+###  https://ibclo.ericsson.com/#hasDuplex
+<https://ibclo.ericsson.com/#hasDuplex> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:comment "The Duplex label for the metric." ;
+                                        rdfs:label "hasDuplex" .
+
+
+###  https://ibclo.ericsson.com/#hasEndpoint
+<https://ibclo.ericsson.com/#hasEndpoint> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:comment "The Endpoint label for the metric." ;
+                                          rdfs:label "hasEndpoint" .
+
+
+###  https://ibclo.ericsson.com/#hasEvent
+<https://ibclo.ericsson.com/#hasEvent> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "The Event label for the metric." ;
+                                       rdfs:label "hasEvent" .
+
+
+###  https://ibclo.ericsson.com/#hasFirmwareRevision
+<https://ibclo.ericsson.com/#hasFirmwareRevision> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                                  rdfs:range xsd:string ;
+                                                  rdfs:comment "The Firmware revision label for the metric." ;
+                                                  rdfs:label "hasFirmwareRevision" .
+
+
+###  https://ibclo.ericsson.com/#hasFstype
+<https://ibclo.ericsson.com/#hasFstype> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:comment "The Fstype label for the metric." ;
+                                        rdfs:label "hasFstype" .
+
+
+###  https://ibclo.ericsson.com/#hasGoversion
+<https://ibclo.ericsson.com/#hasGoversion> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:comment "The Goversion label for the metric." ;
+                                           rdfs:label "hasGoversion" .
+
+
+###  https://ibclo.ericsson.com/#hasHandler
+<https://ibclo.ericsson.com/#hasHandler> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                         rdfs:range xsd:string ;
+                                         rdfs:comment "The Handler label for the metric." ;
+                                         rdfs:label "hasHandler" .
+
+
+###  https://ibclo.ericsson.com/#hasId
+<https://ibclo.ericsson.com/#hasId> rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                    rdfs:range xsd:string ;
+                                    rdfs:comment "The Id label for the metric." ;
+                                    rdfs:label "hasId" .
+
+
+###  https://ibclo.ericsson.com/#hasIdLike
+<https://ibclo.ericsson.com/#hasIdLike> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:comment "The Id like label for the metric." ;
+                                        rdfs:label "hasIdLike" .
+
+
+###  https://ibclo.ericsson.com/#hasIndex
+<https://ibclo.ericsson.com/#hasIndex> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "The Index label for the metric." ;
+                                       rdfs:label "hasIndex" .
+
+
+###  https://ibclo.ericsson.com/#hasInstance
+<https://ibclo.ericsson.com/#hasInstance> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:comment "The Instance label for the metric." ;
+                                          rdfs:label "hasInstance" .
+
+
+###  https://ibclo.ericsson.com/#hasInterval
+<https://ibclo.ericsson.com/#hasInterval> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:comment "The Interval label for the metric." ;
+                                          rdfs:label "hasInterval" .
+
+
+###  https://ibclo.ericsson.com/#hasIp
+<https://ibclo.ericsson.com/#hasIp> rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                    rdfs:range xsd:string ;
+                                    rdfs:comment "The Ip label for the metric." ;
+                                    rdfs:label "hasIp" .
+
+
+###  https://ibclo.ericsson.com/#hasJob
+<https://ibclo.ericsson.com/#hasJob> rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                     rdfs:range xsd:string ;
+                                     rdfs:comment "The Job label for the metric." ;
+                                     rdfs:label "hasJob" .
+
+
+###  https://ibclo.ericsson.com/#hasLabel
+<https://ibclo.ericsson.com/#hasLabel> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "The Label label for the metric." ;
+                                       rdfs:label "hasLabel" .
+
+
+###  https://ibclo.ericsson.com/#hasLe
+<https://ibclo.ericsson.com/#hasLe> rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                    rdfs:range xsd:string ;
+                                    rdfs:comment "The Le label for the metric." ;
+                                    rdfs:label "hasLe" .
+
+
+###  https://ibclo.ericsson.com/#hasListenerName
+<https://ibclo.ericsson.com/#hasListenerName> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                              rdfs:range xsd:string ;
+                                              rdfs:comment "The Listener name label for the metric." ;
+                                              rdfs:label "hasListenerName" .
+
+
+###  https://ibclo.ericsson.com/#hasMachine
+<https://ibclo.ericsson.com/#hasMachine> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                         rdfs:range xsd:string ;
+                                         rdfs:comment "The Machine label for the metric." ;
+                                         rdfs:label "hasMachine" .
+
+
+###  https://ibclo.ericsson.com/#hasMajor
+<https://ibclo.ericsson.com/#hasMajor> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "The Major label for the metric." ;
+                                       rdfs:label "hasMajor" .
+
+
+###  https://ibclo.ericsson.com/#hasManufacturer
+<https://ibclo.ericsson.com/#hasManufacturer> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                              rdfs:range xsd:string ;
+                                              rdfs:comment "The Manufacturer label for the metric." ;
+                                              rdfs:label "hasManufacturer" .
+
+
+###  https://ibclo.ericsson.com/#hasMinor
+<https://ibclo.ericsson.com/#hasMinor> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "The Minor label for the metric." ;
+                                       rdfs:label "hasMinor" .
+
+
+###  https://ibclo.ericsson.com/#hasMode
+<https://ibclo.ericsson.com/#hasMode> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "The Mode label for the metric." ;
+                                      rdfs:label "hasMode" .
+
+
+###  https://ibclo.ericsson.com/#hasModel
+<https://ibclo.ericsson.com/#hasModel> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "The Model label for the metric." ;
+                                       rdfs:label "hasModel" .
+
+
+###  https://ibclo.ericsson.com/#hasModelName
+<https://ibclo.ericsson.com/#hasModelName> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:comment "The Model name label for the metric." ;
+                                           rdfs:label "hasModelName" .
+
+
+###  https://ibclo.ericsson.com/#hasMountpoint
+<https://ibclo.ericsson.com/#hasMountpoint> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                            rdfs:range xsd:string ;
+                                            rdfs:comment "The Mountpoint label for the metric." ;
+                                            rdfs:label "hasMountpoint" .
+
+
+###  https://ibclo.ericsson.com/#hasName
+<https://ibclo.ericsson.com/#hasName> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "The   name   label for the metric." ,
+                                                   "The Name label for the metric." ;
+                                      rdfs:label "hasName" .
+
+
+###  https://ibclo.ericsson.com/#hasNodename
+<https://ibclo.ericsson.com/#hasNodename> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:comment "The Nodename label for the metric." ;
+                                          rdfs:label "hasNodename" .
+
+
+###  https://ibclo.ericsson.com/#hasOperation
+<https://ibclo.ericsson.com/#hasOperation> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <https://ibclo.ericsson.com/#Action> ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:comment "The operation which will be executed by the action." ;
+                                           rdfs:label "hasOperation" .
+
+
+###  https://ibclo.ericsson.com/#hasOperstate
+<https://ibclo.ericsson.com/#hasOperstate> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:comment "The Operstate label for the metric." ;
+                                           rdfs:label "hasOperstate" .
+
+
+###  https://ibclo.ericsson.com/#hasPackage
+<https://ibclo.ericsson.com/#hasPackage> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                         rdfs:range xsd:string ;
+                                         rdfs:comment "The Package label for the metric." ;
+                                         rdfs:label "hasPackage" .
+
+
+###  https://ibclo.ericsson.com/#hasPath
+<https://ibclo.ericsson.com/#hasPath> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "The Path label for the metric." ;
+                                      rdfs:label "hasPath" .
+
+
+###  https://ibclo.ericsson.com/#hasPowerSupply
+<https://ibclo.ericsson.com/#hasPowerSupply> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                             rdfs:range xsd:string ;
+                                             rdfs:comment "The Power supply label for the metric." ;
+                                             rdfs:label "hasPowerSupply" .
+
+
+###  https://ibclo.ericsson.com/#hasPrettyName
+<https://ibclo.ericsson.com/#hasPrettyName> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                            rdfs:range xsd:string ;
+                                            rdfs:comment "The Pretty name label for the metric." ;
+                                            rdfs:label "hasPrettyName" .
+
+
+###  https://ibclo.ericsson.com/#hasProductFamily
+<https://ibclo.ericsson.com/#hasProductFamily> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                               rdfs:range xsd:string ;
+                                               rdfs:comment "The Product family label for the metric." ;
+                                               rdfs:label "hasProductFamily" .
+
+
+###  https://ibclo.ericsson.com/#hasProductName
+<https://ibclo.ericsson.com/#hasProductName> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                             rdfs:range xsd:string ;
+                                             rdfs:comment "The Product name label for the metric." ;
+                                             rdfs:label "hasProductName" .
+
+
+###  https://ibclo.ericsson.com/#hasQuantile
+<https://ibclo.ericsson.com/#hasQuantile> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:comment "The Quantile label for the metric." ;
+                                          rdfs:label "hasQuantile" .
+
+
+###  https://ibclo.ericsson.com/#hasQuery
+<https://ibclo.ericsson.com/#hasQuery> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://ibclo.ericsson.com/#MetricQuery> ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "The query used to collect the metric information." ;
+                                       rdfs:label "hasQuery" .
+
+
+###  https://ibclo.ericsson.com/#hasQueue
+<https://ibclo.ericsson.com/#hasQueue> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "The Queue label for the metric." ;
+                                       rdfs:label "hasQueue" .
+
+
+###  https://ibclo.ericsson.com/#hasReason
+<https://ibclo.ericsson.com/#hasReason> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:comment "The Reason label for the metric." ;
+                                        rdfs:label "hasReason" .
+
+
+###  https://ibclo.ericsson.com/#hasRelease
+<https://ibclo.ericsson.com/#hasRelease> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                         rdfs:range xsd:string ;
+                                         rdfs:comment "The Release label for the metric." ;
+                                         rdfs:label "hasRelease" .
+
+
+###  https://ibclo.ericsson.com/#hasResultStatus
+<https://ibclo.ericsson.com/#hasResultStatus> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <https://ibclo.ericsson.com/#MetricQuery> ;
+                                              rdfs:range xsd:string ;
+                                              rdfs:comment "The status of the API response." ;
+                                              rdfs:label "hasResultStatus" .
+
+
+###  https://ibclo.ericsson.com/#hasResultType
+<https://ibclo.ericsson.com/#hasResultType> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <https://ibclo.ericsson.com/#MetricQuery> ;
+                                            rdfs:range xsd:string ;
+                                            rdfs:comment "The result type returned by the API." ;
+                                            rdfs:label "hasResultType" .
+
+
+###  https://ibclo.ericsson.com/#hasRevision
+<https://ibclo.ericsson.com/#hasRevision> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:comment "The Revision label for the metric." ;
+                                          rdfs:label "hasRevision" .
+
+
+###  https://ibclo.ericsson.com/#hasRole
+<https://ibclo.ericsson.com/#hasRole> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "The Role label for the metric." ;
+                                      rdfs:label "hasRole" .
+
+
+###  https://ibclo.ericsson.com/#hasRuleGroup
+<https://ibclo.ericsson.com/#hasRuleGroup> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:comment "The Rule group label for the metric." ;
+                                           rdfs:label "hasRuleGroup" .
+
+
+###  https://ibclo.ericsson.com/#hasScrapeJob
+<https://ibclo.ericsson.com/#hasScrapeJob> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:comment "The Scrape job label for the metric." ;
+                                           rdfs:label "hasScrapeJob" .
+
+
+###  https://ibclo.ericsson.com/#hasSensor
+<https://ibclo.ericsson.com/#hasSensor> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:comment "The Sensor label for the metric." ;
+                                        rdfs:label "hasSensor" .
+
+
+###  https://ibclo.ericsson.com/#hasSerial
+<https://ibclo.ericsson.com/#hasSerial> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:comment "The Serial label for the metric." ;
+                                        rdfs:label "hasSerial" .
+
+
+###  https://ibclo.ericsson.com/#hasSerialNumber
+<https://ibclo.ericsson.com/#hasSerialNumber> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                              rdfs:range xsd:string ;
+                                              rdfs:comment "The Serial number label for the metric." ;
+                                              rdfs:label "hasSerialNumber" .
+
+
+###  https://ibclo.ericsson.com/#hasSlice
+<https://ibclo.ericsson.com/#hasSlice> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "The Slice label for the metric." ;
+                                       rdfs:label "hasSlice" .
+
+
+###  https://ibclo.ericsson.com/#hasState
+<https://ibclo.ericsson.com/#hasState> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "The State label for the metric." ;
+                                       rdfs:label "hasState" .
+
+
+###  https://ibclo.ericsson.com/#hasStatus
+<https://ibclo.ericsson.com/#hasStatus> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:comment "The Status label for the metric." ;
+                                        rdfs:label "hasStatus" .
+
+
+###  https://ibclo.ericsson.com/#hasSysname
+<https://ibclo.ericsson.com/#hasSysname> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                         rdfs:range xsd:string ;
+                                         rdfs:comment "The Sysname label for the metric." ;
+                                         rdfs:label "hasSysname" .
+
+
+###  https://ibclo.ericsson.com/#hasSystemVendor
+<https://ibclo.ericsson.com/#hasSystemVendor> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                              rdfs:range xsd:string ;
+                                              rdfs:comment "The System vendor label for the metric." ;
+                                              rdfs:label "hasSystemVendor" .
+
+
+###  https://ibclo.ericsson.com/#hasTechnology
+<https://ibclo.ericsson.com/#hasTechnology> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                            rdfs:range xsd:string ;
+                                            rdfs:comment "The Technology label for the metric." ;
+                                            rdfs:label "hasTechnology" .
+
+
+###  https://ibclo.ericsson.com/#hasTimeZone
+<https://ibclo.ericsson.com/#hasTimeZone> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:comment "The Time zone label for the metric." ;
+                                          rdfs:label "hasTimeZone" .
+
+
+###  https://ibclo.ericsson.com/#hasTimestamp
+<https://ibclo.ericsson.com/#hasTimestamp> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <https://ibclo.ericsson.com/#MetricResult> ;
+                                           rdfs:range xsd:dateTime ;
+                                           rdfs:comment "The timestamp related to a result." ;
+                                           rdfs:label "hasTimestamp" .
+
+
+###  https://ibclo.ericsson.com/#hasType
+<https://ibclo.ericsson.com/#hasType> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "The Type label for the metric." ;
+                                      rdfs:label "hasType" .
+
+
+###  https://ibclo.ericsson.com/#hasValue
+<https://ibclo.ericsson.com/#hasValue> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://ibclo.ericsson.com/#MetricResult> ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "The value associated with a result." ;
+                                       rdfs:label "hasValue" .
+
+
+###  https://ibclo.ericsson.com/#hasVersion
+<https://ibclo.ericsson.com/#hasVersion> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                         rdfs:range xsd:string ;
+                                         rdfs:comment "The Version label for the metric." ;
+                                         rdfs:label "hasVersion" .
+
+
+###  https://ibclo.ericsson.com/#hasVersionCodename
+<https://ibclo.ericsson.com/#hasVersionCodename> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                                 rdfs:range xsd:string ;
+                                                 rdfs:comment "The Version codename label for the metric." ;
+                                                 rdfs:label "hasVersionCodename" .
+
+
+###  https://ibclo.ericsson.com/#hasVersionId
+<https://ibclo.ericsson.com/#hasVersionId> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:comment "The Version id label for the metric." ;
+                                           rdfs:label "hasVersionId" .
+
+
+###  https://ibclo.ericsson.com/#hasZone
+<https://ibclo.ericsson.com/#hasZone> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <https://ibclo.ericsson.com/#Metric> ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "The Zone label for the metric." ;
+                                      rdfs:label "hasZone" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://ibclo.ericsson.com/#Action
+<https://ibclo.ericsson.com/#Action> rdf:type owl:Class ;
+                                     owl:disjointWith <https://ibclo.ericsson.com/#ActionEffect> ;
+                                     rdfs:comment "The operations which will be executed to effect the metric." ;
+                                     rdfs:label "Action" .
+
+
+###  https://ibclo.ericsson.com/#ActionEffect
+<https://ibclo.ericsson.com/#ActionEffect> rdf:type owl:Class ;
+                                           rdfs:comment "The result of executing the actions operations. " ;
+                                           rdfs:label "ActionEffect" .
+
+
+###  https://ibclo.ericsson.com/#Metric
+<https://ibclo.ericsson.com/#Metric> rdf:type owl:Class ;
+                                     owl:disjointWith <https://ibclo.ericsson.com/#MetricQuery> ,
+                                                      <https://ibclo.ericsson.com/#MetricResult> ,
+                                                      <https://ibclo.ericsson.com/#MetricResultSet> ;
+                                     rdfs:comment "The metric information being monitored." ;
+                                     rdfs:label "Metric" .
+
+
+###  https://ibclo.ericsson.com/#MetricQuery
+<https://ibclo.ericsson.com/#MetricQuery> rdf:type owl:Class ;
+                                          owl:disjointWith <https://ibclo.ericsson.com/#MetricResult> ,
+                                                           <https://ibclo.ericsson.com/#MetricResultSet> ;
+                                          rdfs:comment "The information related to the query used to collect the metric information." ;
+                                          rdfs:label "MetricQuery" .
+
+
+###  https://ibclo.ericsson.com/#MetricResult
+<https://ibclo.ericsson.com/#MetricResult> rdf:type owl:Class ;
+                                           owl:disjointWith <https://ibclo.ericsson.com/#MetricResultSet> ;
+                                           rdfs:comment "A result related to a specific result set." ;
+                                           rdfs:label "MetricResult" .
+
+
+###  https://ibclo.ericsson.com/#MetricResultSet
+<https://ibclo.ericsson.com/#MetricResultSet> rdf:type owl:Class ;
+                                              rdfs:comment "The values and timestamps related to a metric." ;
+                                              rdfs:label "MetricResultSet" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

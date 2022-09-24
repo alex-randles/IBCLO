@@ -1,0 +1,2884 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "https://ibclo.ericsson.com/", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "undefined" : "Intent Based Control Loop Ontology (IBCLO)"
+    },
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#",
+    "version" : "4 July 2022",
+    "author" : [ "Liam Fallon", "Alex Randles", "John Keeney" ],
+    "description" : {
+      "undefined" : "The Intent Based Control Loop Ontology (IBCLO) is used to capture information which relates to metric information within the Prometheus monitoring system."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/publicdomain/zero/1.0/",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Alex Randles",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "John Keeney",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Liam Fallon",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "4 July 2022",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "Intent Based Control Loop Ontology (IBCLO)",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://ibclo.ericsson.com/#",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "undefined",
+        "value" : "The Intent Based Control Loop Ontology (IBCLO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to Prometheus metric information.",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "4 July 2022",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Intent Based Control Loop Ontology (IBCLO)",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "191",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "201",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://ibclo.ericsson.com/#ActionEffect",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActionEffect",
+      "undefined" : "ActionEffect"
+    },
+    "comment" : {
+      "undefined" : "The result of executing the actions operations. "
+    },
+    "attributes" : [ "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#MetricResultSet",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MetricResultSet",
+      "undefined" : "MetricResultSet"
+    },
+    "comment" : {
+      "undefined" : "The values and timestamps related to a metric."
+    },
+    "attributes" : [ "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#MetricQuery",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MetricQuery",
+      "undefined" : "MetricQuery"
+    },
+    "comment" : {
+      "undefined" : "The information related to the query used to collect the metric information."
+    },
+    "attributes" : [ "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "125",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "126",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "127",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "130",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#MetricResult",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MetricResult",
+      "undefined" : "MetricResult"
+    },
+    "comment" : {
+      "undefined" : "A result related to a specific result set."
+    },
+    "attributes" : [ "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "133",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "134",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "137",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "140",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "108",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "94",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "84",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "142",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "122",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "151",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "116",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "129",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "146",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "76",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "156",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "149",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "161",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "162",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "124",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "96",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "165",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "166",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "155",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "61",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "158",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "167",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "110",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "172",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "169",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "132",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "171",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "78",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "177",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "175",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "118",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "182",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "183",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "74",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "160",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "191",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "144",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "114",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "201",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "153",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#Metric",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Metric",
+      "undefined" : "Metric"
+    },
+    "comment" : {
+      "undefined" : "The metric information being monitored."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "120",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "106",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "112",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "179",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "104",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#Action",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Action",
+      "undefined" : "Action"
+    },
+    "comment" : {
+      "undefined" : "The operations which will be executed to effect the metric."
+    },
+    "attributes" : [ "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "145",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "147",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "148",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "152",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "154",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "157",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "159",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "163",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "164",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "168",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "170",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "173",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "174",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "176",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "178",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "180",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "181",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "184",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "185",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "186",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "187",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "188",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "189",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "190",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "192",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "194",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "195",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "196",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "197",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "198",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "199",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "200",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "193",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "202",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "203",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "204",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "205",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "206",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://ibclo.ericsson.com/#hasChassisVendor",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasChassisVendor",
+      "undefined" : "hasChassisVendor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Chassis vendor label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasDialerName",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasDialerName",
+      "undefined" : "hasDialerName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Dialer name label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasModelName",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasModelName",
+      "undefined" : "hasModelName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Model name label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasScrapeJob",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasScrapeJob",
+      "undefined" : "hasScrapeJob"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Scrape job label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasBoardVersion",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasBoardVersion",
+      "undefined" : "hasBoardVersion"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Board version label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasAlertstate",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasAlertstate",
+      "undefined" : "hasAlertstate"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Alertstate label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasDomainname",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasDomainname",
+      "undefined" : "hasDomainname"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Domainname label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasConfig",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasConfig",
+      "undefined" : "hasConfig"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Config label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasAlertname",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasAlertname",
+      "undefined" : "hasAlertname"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Alertname label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasReason",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasReason",
+      "undefined" : "hasReason"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Reason label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasBroadcast",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasBroadcast",
+      "undefined" : "hasBroadcast"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Broadcast label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasChip",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasChip",
+      "undefined" : "hasChip"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Chip label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#inMetricSet",
+    "inverse" : "28",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "inMetricSet",
+      "undefined" : "inMetricSet"
+    },
+    "domain" : "26",
+    "comment" : {
+      "undefined" : "A result within a result set."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasSerial",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasSerial",
+      "undefined" : "hasSerial"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Serial label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasMetricQuery",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "hasMetricQuery",
+      "undefined" : "hasMetricQuery"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The query which retrieved the metric information."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasResultStatus",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "hasResultStatus",
+      "undefined" : "hasResultStatus"
+    },
+    "domain" : "33",
+    "comment" : {
+      "undefined" : "The status of the API response."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasCall",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "hasCall",
+      "undefined" : "hasCall"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Call label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasResultType",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasResultType",
+      "undefined" : "hasResultType"
+    },
+    "domain" : "33",
+    "comment" : {
+      "undefined" : "The result type returned by the API."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasActionName",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "hasActionName",
+      "undefined" : "hasActionName"
+    },
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "The name of the action."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasCode",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "hasCode",
+      "undefined" : "hasCode"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Code label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasDuplex",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasDuplex",
+      "undefined" : "hasDuplex"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Duplex label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasMountpoint",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "hasMountpoint",
+      "undefined" : "hasMountpoint"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Mountpoint label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasBranch",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "hasBranch",
+      "undefined" : "hasBranch"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Branch label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasRevision",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "hasRevision",
+      "undefined" : "hasRevision"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Revision label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasIdLike",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "hasIdLike",
+      "undefined" : "hasIdLike"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Id like label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasTechnology",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "hasTechnology",
+      "undefined" : "hasTechnology"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Technology label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasPath",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "hasPath",
+      "undefined" : "hasPath"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Path label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasConfidence",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "hasConfidence",
+      "undefined" : "hasConfidence"
+    },
+    "domain" : "29",
+    "comment" : {
+      "undefined" : "The likelihood of the action having the desired effect."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasProductFamily",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "hasProductFamily",
+      "undefined" : "hasProductFamily"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Product family label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasResultSet",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasResultSet",
+      "undefined" : "hasResultSet"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The result set associated with the metric."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasCapacityLevel",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "hasCapacityLevel",
+      "undefined" : "hasCapacityLevel"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Capacity level label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasRelease",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "hasRelease",
+      "undefined" : "hasRelease"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Release label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasBiosVendor",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "hasBiosVendor",
+      "undefined" : "hasBiosVendor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Bios vendor label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasSystemVendor",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "hasSystemVendor",
+      "undefined" : "hasSystemVendor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The System vendor label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasFirmwareRevision",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "hasFirmwareRevision",
+      "undefined" : "hasFirmwareRevision"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Firmware revision label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasListenerName",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "hasListenerName",
+      "undefined" : "hasListenerName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Listener name label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "77"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasHandler",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "hasHandler",
+      "undefined" : "hasHandler"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Handler label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "79"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasQueue",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "hasQueue",
+      "undefined" : "hasQueue"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Queue label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasInstance",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "hasInstance",
+      "undefined" : "hasInstance"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Instance label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "83"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasDescription",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "hasDescription",
+      "undefined" : "hasDescription"
+    },
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "A textual description of the action."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasTimestamp",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "hasTimestamp",
+      "undefined" : "hasTimestamp"
+    },
+    "domain" : "26",
+    "comment" : {
+      "undefined" : "The timestamp related to a result."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "87"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasProductName",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "hasProductName",
+      "undefined" : "hasProductName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Product name label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "89"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasPowerSupply",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "hasPowerSupply",
+      "undefined" : "hasPowerSupply"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Power supply label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "91"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasLe",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "hasLe",
+      "undefined" : "hasLe"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Le label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasQuery",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "hasQuery",
+      "undefined" : "hasQuery"
+    },
+    "domain" : "33",
+    "comment" : {
+      "undefined" : "The query used to collect the metric information."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "95"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasCpu",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "hasCpu",
+      "undefined" : "hasCpu"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Cpu label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "97"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasLabel",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "hasLabel",
+      "undefined" : "hasLabel"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Label label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasVersionCodename",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasVersionCodename",
+      "undefined" : "hasVersionCodename"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Version codename label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "101"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasVersionId",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasVersionId",
+      "undefined" : "hasVersionId"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Version id label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "102"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasRole",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "104",
+    "label" : {
+      "IRI-based" : "hasRole",
+      "undefined" : "hasRole"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Role label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "103"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasSensor",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "106",
+    "label" : {
+      "IRI-based" : "hasSensor",
+      "undefined" : "hasSensor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Sensor label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "105"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasJob",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "hasJob",
+      "undefined" : "hasJob"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Job label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "107"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasName",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "110",
+    "label" : {
+      "IRI-based" : "hasName",
+      "undefined" : "hasName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Name label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "109"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasSerialNumber",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "hasSerialNumber",
+      "undefined" : "hasSerialNumber"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Serial number label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "111"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasState",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "114",
+    "label" : {
+      "IRI-based" : "hasState",
+      "undefined" : "hasState"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The State label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "113"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasGoversion",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "116",
+    "label" : {
+      "IRI-based" : "hasGoversion",
+      "undefined" : "hasGoversion"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Goversion label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "115"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasType",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "118",
+    "label" : {
+      "IRI-based" : "hasType",
+      "undefined" : "hasType"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Type label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "117"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasStatus",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "120",
+    "label" : {
+      "IRI-based" : "hasStatus",
+      "undefined" : "hasStatus"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Status label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "119"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasIp",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "122",
+    "label" : {
+      "IRI-based" : "hasIp",
+      "undefined" : "hasIp"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Ip label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "121"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasQuantile",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "124",
+    "label" : {
+      "IRI-based" : "hasQuantile",
+      "undefined" : "hasQuantile"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Quantile label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "123"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasId",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "129",
+    "label" : {
+      "IRI-based" : "hasId",
+      "undefined" : "hasId"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Id label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "128"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasModel",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "132",
+    "label" : {
+      "IRI-based" : "hasModel",
+      "undefined" : "hasModel"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Model label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "131"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasBiosVersion",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "133",
+    "label" : {
+      "IRI-based" : "hasBiosVersion",
+      "undefined" : "hasBiosVersion"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Bios version label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "135"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasChipName",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "126",
+    "label" : {
+      "IRI-based" : "hasChipName",
+      "undefined" : "hasChipName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Chip name label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "136"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasCollector",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "125",
+    "label" : {
+      "IRI-based" : "hasCollector",
+      "undefined" : "hasCollector"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Collector label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "138"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasBoardName",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "137",
+    "label" : {
+      "IRI-based" : "hasBoardName",
+      "undefined" : "hasBoardName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Board name label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "139"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasIndex",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "142",
+    "label" : {
+      "IRI-based" : "hasIndex",
+      "undefined" : "hasIndex"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Index label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "141"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasAlertmanager",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "144",
+    "label" : {
+      "IRI-based" : "hasAlertmanager",
+      "undefined" : "hasAlertmanager"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Alertmanager label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "143"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasFstype",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "146",
+    "label" : {
+      "IRI-based" : "hasFstype",
+      "undefined" : "hasFstype"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Fstype label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "145"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasBiosDate",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "140",
+    "label" : {
+      "IRI-based" : "hasBiosDate",
+      "undefined" : "hasBiosDate"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Bios date label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "147"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasEndpoint",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "149",
+    "label" : {
+      "IRI-based" : "hasEndpoint",
+      "undefined" : "hasEndpoint"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Endpoint label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "148"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#usedByMetric",
+    "inverse" : "32",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "usedByMetric",
+      "undefined" : "usedByMetric"
+    },
+    "domain" : "33",
+    "comment" : {
+      "undefined" : "The metric used by the query."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "150"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasSysname",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "153",
+    "label" : {
+      "IRI-based" : "hasSysname",
+      "undefined" : "hasSysname"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Sysname label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "152"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasOperation",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "155",
+    "label" : {
+      "IRI-based" : "hasOperation",
+      "undefined" : "hasOperation"
+    },
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "The operation which will be executed by the action."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "154"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasPackage",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "158",
+    "label" : {
+      "IRI-based" : "hasPackage",
+      "undefined" : "hasPackage"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Package label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "157"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasTimeZone",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "160",
+    "label" : {
+      "IRI-based" : "hasTimeZone",
+      "undefined" : "hasTimeZone"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Time zone label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "159"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#generatedByMetric",
+    "inverse" : "66",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "generatedByMetric",
+      "undefined" : "generatedByMetric"
+    },
+    "domain" : "27",
+    "comment" : {
+      "undefined" : "The result set generated by the metric."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "163"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasZone",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasZone",
+      "undefined" : "hasZone"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Zone label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "164"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasMinor",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "169",
+    "label" : {
+      "IRI-based" : "hasMinor",
+      "undefined" : "hasMinor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Minor label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "168"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasResult",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "hasResult",
+      "undefined" : "hasResult"
+    },
+    "domain" : "27",
+    "comment" : {
+      "undefined" : "A result within a result set."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasMachine",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "171",
+    "label" : {
+      "IRI-based" : "hasMachine",
+      "undefined" : "hasMachine"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Machine label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "170"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasClocksource",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "127",
+    "label" : {
+      "IRI-based" : "hasClocksource",
+      "undefined" : "hasClocksource"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Clocksource label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "173"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasMajor",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "175",
+    "label" : {
+      "IRI-based" : "hasMajor",
+      "undefined" : "hasMajor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Major label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "174"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasNodename",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "167",
+    "label" : {
+      "IRI-based" : "hasNodename",
+      "undefined" : "hasNodename"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Nodename label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "176"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasRuleGroup",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "179",
+    "label" : {
+      "IRI-based" : "hasRuleGroup",
+      "undefined" : "hasRuleGroup"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Rule group label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "178"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasInterval",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "151",
+    "label" : {
+      "IRI-based" : "hasInterval",
+      "undefined" : "hasInterval"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Interval label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "180"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasEvent",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "156",
+    "label" : {
+      "IRI-based" : "hasEvent",
+      "undefined" : "hasEvent"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Event label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "181"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasOperstate",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "166",
+    "label" : {
+      "IRI-based" : "hasOperstate",
+      "undefined" : "hasOperstate"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Operstate label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "184"
+  }, {
+    "range" : "27",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "185"
+  }, {
+    "range" : "26",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "186"
+  }, {
+    "range" : "27",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "187"
+  }, {
+    "range" : "26",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "188"
+  }, {
+    "range" : "27",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "189"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasDevice",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "162",
+    "label" : {
+      "IRI-based" : "hasDevice",
+      "undefined" : "hasDevice"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Device label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "190"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#effectedBy",
+    "inverse" : "193",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "effectedBy",
+      "undefined" : "effectedBy"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The effect of the action's operation on the metric."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "192"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasManufacturer",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "177",
+    "label" : {
+      "IRI-based" : "hasManufacturer",
+      "undefined" : "hasManufacturer"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Manufacturer label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "194"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasAddress",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "191",
+    "label" : {
+      "IRI-based" : "hasAddress",
+      "undefined" : "hasAddress"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Address label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "195"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasCause",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "130",
+    "label" : {
+      "IRI-based" : "hasCause",
+      "undefined" : "hasCause"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Cause label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "196"
+  }, {
+    "range" : "29",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "197"
+  }, {
+    "range" : "33",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "198"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasVersion",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "182",
+    "label" : {
+      "IRI-based" : "hasVersion",
+      "undefined" : "hasVersion"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Version label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "199"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasPrettyName",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "165",
+    "label" : {
+      "IRI-based" : "hasPrettyName",
+      "undefined" : "hasPrettyName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Pretty name label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "200"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#effectsMetric",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "effectsMetric",
+      "undefined" : "effectsMetric"
+    },
+    "domain" : "29",
+    "comment" : {
+      "undefined" : "The metric effected by the action's operation."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "193"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasValue",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "183",
+    "label" : {
+      "IRI-based" : "hasValue",
+      "undefined" : "hasValue"
+    },
+    "domain" : "26",
+    "comment" : {
+      "undefined" : "The value associated with a result."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "202"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasSlice",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "201",
+    "label" : {
+      "IRI-based" : "hasSlice",
+      "undefined" : "hasSlice"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Slice label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "203"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasMode",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "172",
+    "label" : {
+      "IRI-based" : "hasMode",
+      "undefined" : "hasMode"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Mode label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "204"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasBoardVendor",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "134",
+    "label" : {
+      "IRI-based" : "hasBoardVendor",
+      "undefined" : "hasBoardVendor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Board vendor label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "205"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasCore",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "161",
+    "label" : {
+      "IRI-based" : "hasCore",
+      "undefined" : "hasCore"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Core label for the metric."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "206"
+  } ]
+}

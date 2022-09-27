@@ -8,7 +8,7 @@
     },
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#",
     "version" : "4 July 2022",
-    "author" : [ "Liam Fallon", "Alex Randles", "John Keeney" ],
+    "author" : [ "Alex Randles" ],
     "description" : {
       "undefined" : "The Intent Based Control Loop Ontology (IBCLO) is used to capture information which relates to metric information within the Prometheus monitoring system."
     },
@@ -24,16 +24,6 @@
         "language" : "undefined",
         "value" : "Alex Randles",
         "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "John Keeney",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "Liam Fallon",
-        "type" : "label"
       } ],
       "created" : [ {
         "identifier" : "created",
@@ -44,7 +34,7 @@
       "preferredNamespacePrefix" : [ {
         "identifier" : "preferredNamespacePrefix",
         "language" : "undefined",
-        "value" : "Intent Based Control Loop Ontology (IBCLO)",
+        "value" : "ibclo",
         "type" : "label"
       } ],
       "preferredNamespaceUri" : [ {
@@ -90,7 +80,7 @@
     "id" : "27",
     "type" : "owl:Class"
   }, {
-    "id" : "33",
+    "id" : "31",
     "type" : "owl:Class"
   }, {
     "id" : "16",
@@ -156,7 +146,7 @@
     "id" : "140",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "12",
+    "id" : "14",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "108",
@@ -201,7 +191,7 @@
     "id" : "156",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "14",
+    "id" : "12",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "4",
@@ -228,7 +218,7 @@
     "id" : "124",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "90",
+    "id" : "92",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "82",
@@ -243,7 +233,7 @@
     "id" : "165",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "92",
+    "id" : "90",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "166",
@@ -288,7 +278,7 @@
     "id" : "177",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "175",
+    "id" : "174",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "118",
@@ -345,7 +335,7 @@
     "id" : "112",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "31",
+    "id" : "33",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "179",
@@ -431,7 +421,7 @@
       "undefined" : "The information related to the query used to collect the metric information."
     },
     "attributes" : [ "external" ],
-    "id" : "33"
+    "id" : "31"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -588,7 +578,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "12",
+    "id" : "14",
     "label" : {
       "IRI-based" : "string"
     }
@@ -693,7 +683,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "14",
+    "id" : "12",
     "label" : {
       "IRI-based" : "string"
     }
@@ -756,7 +746,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "90",
+    "id" : "92",
     "label" : {
       "IRI-based" : "string"
     }
@@ -791,7 +781,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "92",
+    "id" : "90",
     "label" : {
       "IRI-based" : "string"
     }
@@ -896,7 +886,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "175",
+    "id" : "174",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1035,7 +1025,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "31",
+    "id" : "33",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1143,10 +1133,10 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "30",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "32",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "35",
     "type" : "owl:datatypeProperty"
@@ -1349,7 +1339,7 @@
     "id" : "173",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "174",
+    "id" : "175",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "176",
@@ -1439,7 +1429,7 @@
     "comment" : {
       "undefined" : "The Chassis vendor label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "0"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasDialerName",
@@ -1453,7 +1443,7 @@
     "comment" : {
       "undefined" : "The Dialer name label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "3"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasModelName",
@@ -1467,7 +1457,7 @@
     "comment" : {
       "undefined" : "The Model name label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "5"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasScrapeJob",
@@ -1481,7 +1471,7 @@
     "comment" : {
       "undefined" : "The Scrape job label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "7"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasBoardVersion",
@@ -1495,26 +1485,12 @@
     "comment" : {
       "undefined" : "The Board version label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "9"
-  }, {
-    "iri" : "https://ibclo.ericsson.com/#hasAlertstate",
-    "baseIri" : "https://ibclo.ericsson.com/",
-    "range" : "12",
-    "label" : {
-      "IRI-based" : "hasAlertstate",
-      "undefined" : "hasAlertstate"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "The Alertstate label for the metric."
-    },
-    "attributes" : [ "external", "datatype" ],
-    "id" : "11"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasDomainname",
     "baseIri" : "https://ibclo.ericsson.com/",
-    "range" : "14",
+    "range" : "12",
     "label" : {
       "IRI-based" : "hasDomainname",
       "undefined" : "hasDomainname"
@@ -1523,7 +1499,21 @@
     "comment" : {
       "undefined" : "The Domainname label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasAlertstate",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasAlertstate",
+      "undefined" : "hasAlertstate"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Alertstate label for the metric."
+    },
+    "attributes" : [ "datatype", "external" ],
     "id" : "13"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasConfig",
@@ -1537,7 +1527,7 @@
     "comment" : {
       "undefined" : "The Config label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "15"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasAlertname",
@@ -1551,7 +1541,7 @@
     "comment" : {
       "undefined" : "The Alertname label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "17"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasReason",
@@ -1565,7 +1555,7 @@
     "comment" : {
       "undefined" : "The Reason label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "19"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasBroadcast",
@@ -1579,7 +1569,7 @@
     "comment" : {
       "undefined" : "The Broadcast label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "21"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasChip",
@@ -1593,7 +1583,7 @@
     "comment" : {
       "undefined" : "The Chip label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "23"
   }, {
     "iri" : "https://ibclo.ericsson.com/#inMetricSet",
@@ -1611,23 +1601,9 @@
     "attributes" : [ "object", "external" ],
     "id" : "25"
   }, {
-    "iri" : "https://ibclo.ericsson.com/#hasSerial",
-    "baseIri" : "https://ibclo.ericsson.com/",
-    "range" : "31",
-    "label" : {
-      "IRI-based" : "hasSerial",
-      "undefined" : "hasSerial"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "The Serial label for the metric."
-    },
-    "attributes" : [ "external", "datatype" ],
-    "id" : "30"
-  }, {
     "iri" : "https://ibclo.ericsson.com/#hasMetricQuery",
     "baseIri" : "https://ibclo.ericsson.com/",
-    "range" : "33",
+    "range" : "31",
     "label" : {
       "IRI-based" : "hasMetricQuery",
       "undefined" : "hasMetricQuery"
@@ -1637,6 +1613,20 @@
       "undefined" : "The query which retrieved the metric information."
     },
     "attributes" : [ "object", "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasSerial",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "hasSerial",
+      "undefined" : "hasSerial"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Serial label for the metric."
+    },
+    "attributes" : [ "datatype", "external" ],
     "id" : "32"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasResultStatus",
@@ -1646,11 +1636,11 @@
       "IRI-based" : "hasResultStatus",
       "undefined" : "hasResultStatus"
     },
-    "domain" : "33",
+    "domain" : "31",
     "comment" : {
       "undefined" : "The status of the API response."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "35"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasCall",
@@ -1664,7 +1654,7 @@
     "comment" : {
       "undefined" : "The Call label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "38"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasResultType",
@@ -1674,11 +1664,11 @@
       "IRI-based" : "hasResultType",
       "undefined" : "hasResultType"
     },
-    "domain" : "33",
+    "domain" : "31",
     "comment" : {
       "undefined" : "The result type returned by the API."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "41"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasActionName",
@@ -1692,7 +1682,7 @@
     "comment" : {
       "undefined" : "The name of the action."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "43"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasCode",
@@ -1706,7 +1696,7 @@
     "comment" : {
       "undefined" : "The Code label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "46"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasDuplex",
@@ -1720,7 +1710,7 @@
     "comment" : {
       "undefined" : "The Duplex label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "48"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasMountpoint",
@@ -1734,7 +1724,7 @@
     "comment" : {
       "undefined" : "The Mountpoint label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "50"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasBranch",
@@ -1748,7 +1738,7 @@
     "comment" : {
       "undefined" : "The Branch label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "52"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasRevision",
@@ -1762,7 +1752,7 @@
     "comment" : {
       "undefined" : "The Revision label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "54"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasIdLike",
@@ -1776,7 +1766,7 @@
     "comment" : {
       "undefined" : "The Id like label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "56"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasTechnology",
@@ -1790,7 +1780,7 @@
     "comment" : {
       "undefined" : "The Technology label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "58"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasPath",
@@ -1804,7 +1794,7 @@
     "comment" : {
       "undefined" : "The Path label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "60"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasConfidence",
@@ -1818,7 +1808,7 @@
     "comment" : {
       "undefined" : "The likelihood of the action having the desired effect."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "62"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasProductFamily",
@@ -1832,7 +1822,7 @@
     "comment" : {
       "undefined" : "The Product family label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "64"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasResultSet",
@@ -1860,7 +1850,7 @@
     "comment" : {
       "undefined" : "The Capacity level label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "67"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasRelease",
@@ -1874,7 +1864,7 @@
     "comment" : {
       "undefined" : "The Release label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "69"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasBiosVendor",
@@ -1888,7 +1878,7 @@
     "comment" : {
       "undefined" : "The Bios vendor label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "71"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasSystemVendor",
@@ -1902,7 +1892,7 @@
     "comment" : {
       "undefined" : "The System vendor label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "73"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasFirmwareRevision",
@@ -1916,7 +1906,7 @@
     "comment" : {
       "undefined" : "The Firmware revision label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "75"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasListenerName",
@@ -1930,7 +1920,7 @@
     "comment" : {
       "undefined" : "The Listener name label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "77"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasHandler",
@@ -1944,7 +1934,7 @@
     "comment" : {
       "undefined" : "The Handler label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "79"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasQueue",
@@ -1958,7 +1948,7 @@
     "comment" : {
       "undefined" : "The Queue label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "81"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasInstance",
@@ -1972,7 +1962,7 @@
     "comment" : {
       "undefined" : "The Instance label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "83"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasDescription",
@@ -1986,7 +1976,7 @@
     "comment" : {
       "undefined" : "A textual description of the action."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "85"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasTimestamp",
@@ -2000,26 +1990,12 @@
     "comment" : {
       "undefined" : "The timestamp related to a result."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "87"
-  }, {
-    "iri" : "https://ibclo.ericsson.com/#hasProductName",
-    "baseIri" : "https://ibclo.ericsson.com/",
-    "range" : "90",
-    "label" : {
-      "IRI-based" : "hasProductName",
-      "undefined" : "hasProductName"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "The Product name label for the metric."
-    },
-    "attributes" : [ "external", "datatype" ],
-    "id" : "89"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasPowerSupply",
     "baseIri" : "https://ibclo.ericsson.com/",
-    "range" : "92",
+    "range" : "90",
     "label" : {
       "IRI-based" : "hasPowerSupply",
       "undefined" : "hasPowerSupply"
@@ -2028,7 +2004,21 @@
     "comment" : {
       "undefined" : "The Power supply label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
+    "id" : "89"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasProductName",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "hasProductName",
+      "undefined" : "hasProductName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Product name label for the metric."
+    },
+    "attributes" : [ "datatype", "external" ],
     "id" : "91"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasLe",
@@ -2042,7 +2032,7 @@
     "comment" : {
       "undefined" : "The Le label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "93"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasQuery",
@@ -2052,11 +2042,11 @@
       "IRI-based" : "hasQuery",
       "undefined" : "hasQuery"
     },
-    "domain" : "33",
+    "domain" : "31",
     "comment" : {
       "undefined" : "The query used to collect the metric information."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "95"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasCpu",
@@ -2070,7 +2060,7 @@
     "comment" : {
       "undefined" : "The Cpu label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "97"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasLabel",
@@ -2084,7 +2074,7 @@
     "comment" : {
       "undefined" : "The Label label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "99"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasVersionCodename",
@@ -2098,7 +2088,7 @@
     "comment" : {
       "undefined" : "The Version codename label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "101"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasVersionId",
@@ -2112,7 +2102,7 @@
     "comment" : {
       "undefined" : "The Version id label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "102"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasRole",
@@ -2126,7 +2116,7 @@
     "comment" : {
       "undefined" : "The Role label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "103"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasSensor",
@@ -2140,7 +2130,7 @@
     "comment" : {
       "undefined" : "The Sensor label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "105"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasJob",
@@ -2154,7 +2144,7 @@
     "comment" : {
       "undefined" : "The Job label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "107"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasName",
@@ -2168,7 +2158,7 @@
     "comment" : {
       "undefined" : "The Name label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "109"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasSerialNumber",
@@ -2182,7 +2172,7 @@
     "comment" : {
       "undefined" : "The Serial number label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "111"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasState",
@@ -2196,7 +2186,7 @@
     "comment" : {
       "undefined" : "The State label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "113"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasGoversion",
@@ -2210,7 +2200,7 @@
     "comment" : {
       "undefined" : "The Goversion label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "115"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasType",
@@ -2224,7 +2214,7 @@
     "comment" : {
       "undefined" : "The Type label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "117"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasStatus",
@@ -2238,7 +2228,7 @@
     "comment" : {
       "undefined" : "The Status label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "119"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasIp",
@@ -2252,7 +2242,7 @@
     "comment" : {
       "undefined" : "The Ip label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "121"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasQuantile",
@@ -2266,7 +2256,7 @@
     "comment" : {
       "undefined" : "The Quantile label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "123"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasId",
@@ -2280,7 +2270,7 @@
     "comment" : {
       "undefined" : "The Id label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "128"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasModel",
@@ -2294,22 +2284,8 @@
     "comment" : {
       "undefined" : "The Model label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "131"
-  }, {
-    "iri" : "https://ibclo.ericsson.com/#hasBiosVersion",
-    "baseIri" : "https://ibclo.ericsson.com/",
-    "range" : "133",
-    "label" : {
-      "IRI-based" : "hasBiosVersion",
-      "undefined" : "hasBiosVersion"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "The Bios version label for the metric."
-    },
-    "attributes" : [ "external", "datatype" ],
-    "id" : "135"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasChipName",
     "baseIri" : "https://ibclo.ericsson.com/",
@@ -2322,7 +2298,21 @@
     "comment" : {
       "undefined" : "The Chip name label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
+    "id" : "135"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasBiosVersion",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "133",
+    "label" : {
+      "IRI-based" : "hasBiosVersion",
+      "undefined" : "hasBiosVersion"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Bios version label for the metric."
+    },
+    "attributes" : [ "datatype", "external" ],
     "id" : "136"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasCollector",
@@ -2336,7 +2326,7 @@
     "comment" : {
       "undefined" : "The Collector label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "138"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasBoardName",
@@ -2350,7 +2340,7 @@
     "comment" : {
       "undefined" : "The Board name label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "139"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasIndex",
@@ -2364,7 +2354,7 @@
     "comment" : {
       "undefined" : "The Index label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "141"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasAlertmanager",
@@ -2378,7 +2368,7 @@
     "comment" : {
       "undefined" : "The Alertmanager label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "143"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasFstype",
@@ -2392,7 +2382,7 @@
     "comment" : {
       "undefined" : "The Fstype label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "145"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasBiosDate",
@@ -2406,7 +2396,7 @@
     "comment" : {
       "undefined" : "The Bios date label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "147"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasEndpoint",
@@ -2420,18 +2410,18 @@
     "comment" : {
       "undefined" : "The Endpoint label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "148"
   }, {
     "iri" : "https://ibclo.ericsson.com/#usedByMetric",
-    "inverse" : "32",
+    "inverse" : "30",
     "baseIri" : "https://ibclo.ericsson.com/",
     "range" : "1",
     "label" : {
       "IRI-based" : "usedByMetric",
       "undefined" : "usedByMetric"
     },
-    "domain" : "33",
+    "domain" : "31",
     "comment" : {
       "undefined" : "The metric used by the query."
     },
@@ -2449,7 +2439,7 @@
     "comment" : {
       "undefined" : "The Sysname label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "152"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasOperation",
@@ -2463,7 +2453,7 @@
     "comment" : {
       "undefined" : "The operation which will be executed by the action."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "154"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasPackage",
@@ -2477,7 +2467,7 @@
     "comment" : {
       "undefined" : "The Package label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "157"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasTimeZone",
@@ -2491,7 +2481,7 @@
     "comment" : {
       "undefined" : "The Time zone label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "159"
   }, {
     "iri" : "https://ibclo.ericsson.com/#generatedByMetric",
@@ -2520,7 +2510,7 @@
     "comment" : {
       "undefined" : "The Zone label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "164"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasMinor",
@@ -2534,7 +2524,7 @@
     "comment" : {
       "undefined" : "The Minor label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "168"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasResult",
@@ -2562,8 +2552,22 @@
     "comment" : {
       "undefined" : "The Machine label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "170"
+  }, {
+    "iri" : "https://ibclo.ericsson.com/#hasMajor",
+    "baseIri" : "https://ibclo.ericsson.com/",
+    "range" : "174",
+    "label" : {
+      "IRI-based" : "hasMajor",
+      "undefined" : "hasMajor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Major label for the metric."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "173"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasClocksource",
     "baseIri" : "https://ibclo.ericsson.com/",
@@ -2576,22 +2580,8 @@
     "comment" : {
       "undefined" : "The Clocksource label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
-    "id" : "173"
-  }, {
-    "iri" : "https://ibclo.ericsson.com/#hasMajor",
-    "baseIri" : "https://ibclo.ericsson.com/",
-    "range" : "175",
-    "label" : {
-      "IRI-based" : "hasMajor",
-      "undefined" : "hasMajor"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "The Major label for the metric."
-    },
-    "attributes" : [ "external", "datatype" ],
-    "id" : "174"
+    "attributes" : [ "datatype", "external" ],
+    "id" : "175"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasNodename",
     "baseIri" : "https://ibclo.ericsson.com/",
@@ -2604,7 +2594,7 @@
     "comment" : {
       "undefined" : "The Nodename label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "176"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasRuleGroup",
@@ -2618,7 +2608,7 @@
     "comment" : {
       "undefined" : "The Rule group label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "178"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasInterval",
@@ -2632,7 +2622,7 @@
     "comment" : {
       "undefined" : "The Interval label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "180"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasEvent",
@@ -2646,7 +2636,7 @@
     "comment" : {
       "undefined" : "The Event label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "181"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasOperstate",
@@ -2660,26 +2650,26 @@
     "comment" : {
       "undefined" : "The Operstate label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "184"
   }, {
-    "range" : "27",
+    "range" : "26",
     "domain" : "1",
     "attributes" : [ "object", "anonymous" ],
     "id" : "185"
   }, {
-    "range" : "26",
+    "range" : "27",
     "domain" : "1",
     "attributes" : [ "object", "anonymous" ],
     "id" : "186"
   }, {
-    "range" : "27",
-    "domain" : "33",
+    "range" : "26",
+    "domain" : "31",
     "attributes" : [ "object", "anonymous" ],
     "id" : "187"
   }, {
-    "range" : "26",
-    "domain" : "33",
+    "range" : "27",
+    "domain" : "31",
     "attributes" : [ "object", "anonymous" ],
     "id" : "188"
   }, {
@@ -2699,7 +2689,7 @@
     "comment" : {
       "undefined" : "The Device label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "190"
   }, {
     "iri" : "https://ibclo.ericsson.com/#effectedBy",
@@ -2728,7 +2718,7 @@
     "comment" : {
       "undefined" : "The Manufacturer label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "194"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasAddress",
@@ -2742,7 +2732,7 @@
     "comment" : {
       "undefined" : "The Address label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "195"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasCause",
@@ -2756,7 +2746,7 @@
     "comment" : {
       "undefined" : "The Cause label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "196"
   }, {
     "range" : "29",
@@ -2764,7 +2754,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "197"
   }, {
-    "range" : "33",
+    "range" : "31",
     "domain" : "1",
     "attributes" : [ "object", "anonymous" ],
     "id" : "198"
@@ -2780,7 +2770,7 @@
     "comment" : {
       "undefined" : "The Version label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "199"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasPrettyName",
@@ -2794,7 +2784,7 @@
     "comment" : {
       "undefined" : "The Pretty name label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "200"
   }, {
     "iri" : "https://ibclo.ericsson.com/#effectsMetric",
@@ -2822,7 +2812,7 @@
     "comment" : {
       "undefined" : "The value associated with a result."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "202"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasSlice",
@@ -2836,7 +2826,7 @@
     "comment" : {
       "undefined" : "The Slice label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "203"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasMode",
@@ -2850,7 +2840,7 @@
     "comment" : {
       "undefined" : "The Mode label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "204"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasBoardVendor",
@@ -2864,7 +2854,7 @@
     "comment" : {
       "undefined" : "The Board vendor label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "205"
   }, {
     "iri" : "https://ibclo.ericsson.com/#hasCore",
@@ -2878,7 +2868,7 @@
     "comment" : {
       "undefined" : "The Core label for the metric."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "206"
   } ]
 }

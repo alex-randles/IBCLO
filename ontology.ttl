@@ -9,13 +9,11 @@
 <https://prometheus-metric-ontology.ericsson.com/#> rdf:type owl:Ontology ;
                                                      <http://purl.org/dc/terms/abstract> "The Intent Based Control Loop Ontology (IBCLO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to Prometheus metric information." ;
                                                      <http://purl.org/dc/terms/created> "4 July 2022" ;
-                                                     <http://purl.org/dc/terms/creator> "Alex Randles" ,
-                                                                                        "John Keeney" ,
-                                                                                        "Liam Fallon" ;
+                                                     <http://purl.org/dc/terms/creator> "Alex Randles" ;
                                                      <http://purl.org/dc/terms/description> "The Intent Based Control Loop Ontology (IBCLO) is used to capture information which relates to metric information within the Prometheus monitoring system." ;
                                                      <http://purl.org/dc/terms/license> "http://creativecommons.org/publicdomain/zero/1.0/" ;
                                                      <http://purl.org/dc/terms/title> "Intent Based Control Loop Ontology (IBCLO)" ;
-                                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "Intent Based Control Loop Ontology (IBCLO)" ;
+                                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "ibclo" ;
                                                      <http://purl.org/vocab/vann/preferredNamespaceUri> "https://ibclo.ericsson.com/#" ;
                                                      owl:versionInfo "4 July 2022" .
 
